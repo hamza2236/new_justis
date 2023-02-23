@@ -31,7 +31,7 @@
                         
                         <div class="px-3">
                             <div class="media">
-                                <a href="index.html" class="logo logo-admin"><img src="{{ url('assets/img/logo.png') }}" height="55" alt="logo" class="my-3"></a>
+                                <a href="{{ url('/') }}" class="logo logo-admin"><img src="{{ url('assets/img/logo.png') }}" height="55" alt="logo" class="my-3"></a>
                                 <div class="media-body ml-3 align-self-center">                                                                                                                       
                                     <h4 class="mt-0 mb-1">Login on Justiscall</h4>
                                 </div>
@@ -69,7 +69,7 @@
                         </div>
                         <div class="m-3 text-center bg-light p-3 text-primary">
                             <h5 class="">Don't have an account ? </h5>
-                            <a href="#" class="btn btn-primary btn-round waves-effect waves-light">Free Resister</a>                
+                            <a href="{{  url('auth-register-pro') }}" class="btn btn-primary btn-round waves-effect waves-light">Sign Up</a>                
                         </div>                        
                     </div>
                 </div>
@@ -81,7 +81,7 @@
                         <h4 class="mt-3">Welcome To Frogetor</h4>
                         <div class="border w-25 mx-auto border-primary"></div>
                         <h1 class="">Let's Get Started</h1>
-                        <p class="font-14 mt-3">Don't have an account ? <a href="" class="text-primary">Sign up</a></p>
+                        <p class="font-14 mt-3">Don't have an account ? <a href="{{  url('auth-register-pro') }}" class="text-primary">Sign up</a></p>
                        
                     </div>
                 </div>
