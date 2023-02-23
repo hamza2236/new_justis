@@ -7,7 +7,7 @@
     <div class="breadcumb-wrapper " data-bg-src="{{ url('assets/img/breadcumb/breadcumb-bg.jpg')}}">
         <div class="container">
             <div class="breadcumb-content">
-                <h1 class="breadcumb-title">About Us</h1>
+                <h1 class="breadcumb-title">Privacy policy</h1>
                 <ul class="breadcumb-menu">
                     <li><a href="{{ url('/') }}">Home</a></li>
                     <li>About Us</li>
