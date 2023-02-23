@@ -192,8 +192,8 @@
                         <div class="header-logo" data-bg-src=""> <a href="{{ url('/')}}"><img src="assets/img/logo.png" width="70px" alt=""></a> </div>
                         <div class="col-auto">
                             <div class="header-social">
-                                <button class="btn"><a href="{{ url('auth-login-pro')}}">Client Sign In</a></button>
-                                <button  class="btn"><a href="{{ url('auth-register-pro')}}">Client Sign Up</a></button>
+                                <button class="btn"><a href="{{ url('auth-login-client')}}">Client Sign In</a></button>
+                                <button  class="btn"><a href="{{ url('auth-register-client')}}">Client Sign Up</a></button>
                                 <button class="btn "><a href="{{ url('auth-login-pro')}}">Pro Sign In</a></button>
                                 <button  class="btn"><a href="{{ url('auth-register-pro')}}">Pro Sign Up</a></button>
                                 
