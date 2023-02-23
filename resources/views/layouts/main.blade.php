@@ -9,7 +9,7 @@
     <meta name="keywords" content="">
     <meta name="robots" content="INDEX,FOLLOW"> <!-- Mobile Specific Metas -->
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"> <!-- Favicons - Place favicon.ico in the root directory -->
-    <link rel="apple-touch-icon" sizes="57x57" href="{{ asset('assets/img/favicons/apple-icon-57x57.png')}}">
+    <!-- <link rel="apple-touch-icon" sizes="57x57" href="{{ asset('assets/img/favicons/apple-icon-57x57.png')}}">
     <link rel="apple-touch-icon" sizes="60x60" href="{{ asset('assets/img/favicons/apple-icon-60x60.png')}}">
     <link rel="apple-touch-icon" sizes="72x72" href="{{ asset('assets/img/favicons/apple-icon-72x72.png')}}">
     <link rel="apple-touch-icon" sizes="76x76" href="{{ asset('assets/img/favicons/apple-icon-76x76.png')}}">
@@ -22,6 +22,7 @@
     <link rel="icon" type="image/png" sizes="32x32" href="{{ asset('assets/img/favicons/favicon-32x32.png')}}">
     <link rel="icon" type="image/png" sizes="96x96" href="{{ asset('assets/img/favicons/favicon-96x96.png')}}">
     <link rel="icon" type="image/png" sizes="16x16" href="{{ asset('assets/img/favicons/favicon-16x16.png')}}"> 
+     -->
     <!-- <link rel="manifest" href="assets/img/favicons/manifest.json"> -->
     <meta name="msapplication-TileColor" content="#ffffff">
     <meta name="msapplication-TileImage" content="{{ asset('assets/img/favicons/ms-icon-144x144.png')}}">
@@ -38,6 +39,8 @@
     <link rel="stylesheet" href="{{ asset('assets/css/slick.min.css')}}"> <!-- Flip Slider -->
     <link rel="stylesheet" href="{{ asset('assets/css/jquery.flipster.min.css')}}"> <!-- Theme Custom CSS -->
     <link rel="stylesheet" href="{{ asset('assets/css/style.css')}}">
+    <!-- App favicon -->
+    <link rel="shortcut icon" href="{{ url('assets/img/logo.png')}}">
 
 </head>
 
