@@ -1,5 +1,5 @@
-@extends('admin.layouts.main')
-@section('main-container-admin')
+@extends('client.layouts.main')
+@section('main-container-client')
 <!DOCTYPE html>
 <html lang="en">
     <head>
