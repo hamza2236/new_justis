@@ -42,7 +42,7 @@ Route::get("auth-register", function(){
   return view("admin.auth-register");
 });
 
-Route::group(['middleware'=>['IsAdmin']],function () {
+///Route::group(['middleware'=>['IsAdmin']],function () {
 
 
   Route::get("admin-dashboard", function(){
@@ -80,6 +80,29 @@ Route::get("forms-advanced", function(){
 Route::get("forms-editors", function(){
    return view("admin.forms-editors");
 });
+// Mubashar Start
+Route::get("add-subscription", function(){
+   return view("admin.add-subscription");
+});
+Route::get("all-subscription", function(){
+   return view("admin.all-subscription");
+});
+Route::get("admin-licence", function(){
+   return view("admin.admin-licence");
+});
+Route::get("add-client", function(){
+   return view("admin.add-client");
+});
+Route::get("all-client", function(){
+   return view("admin.all-client");
+});
+Route::get("create-coupan", function(){
+   return view("admin.create-coupan");
+});
+Route::get("create-new-coupan", function(){
+   return view("admin.create-new-coupan");
+});
+// Mubashar End
 Route::get("forms-repeater", function(){
    return view("admin.forms-repeater");
 });
@@ -105,7 +128,7 @@ Route::get("ui-other-clipboard", function(){
    return view("admin.ui-other-clipboard");
 });
 
-});
+////});
 // admin route end//
 // admin route end//
 // admin route end//
