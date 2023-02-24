@@ -42,7 +42,7 @@ Route::get("auth-register", function(){
   return view("admin.auth-register");
 });
 
-Route::group(['middleware'=>['IsAdmin']],function () {
+///Route::group(['middleware'=>['IsAdmin']],function () {
 
 
   Route::get("admin-dashboard", function(){
@@ -105,7 +105,7 @@ Route::get("ui-other-clipboard", function(){
    return view("admin.ui-other-clipboard");
 });
 
-});
+////});
 // admin route end//
 // admin route end//
 // admin route end//
