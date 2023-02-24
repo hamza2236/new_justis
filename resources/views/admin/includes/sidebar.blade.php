@@ -9,6 +9,30 @@
                         </li>
 
                         <li>
+                            <a href="javascript: void(0);"><i class="mdi mdi-apps"></i><span>Licence Management</span><span class="menu-arrow"><i class="mdi mdi-chevron-right"></i></span></a>
+                            <ul class="nav-second-level" aria-expanded="false">
+                                <li><a href="{{ url('all-subscription') }}"><span>Admin Subscription</span></a></li>
+                                <li><a href="{{ url('add-subscription') }}"><span>Add Subscription</span></a></li> 
+                                <li><a href="{{ url('admin-licence') }}"><span>Admin Licence</span></a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="javascript: void(0);"><i class="mdi mdi-apps"></i><span>Clients</span><span class="menu-arrow"><i class="mdi mdi-chevron-right"></i></span></a>
+                            <ul class="nav-second-level" aria-expanded="false">
+                                <li><a href="{{ url('all-client') }}"><span>All Clients</span></a></li>
+                                <li><a href="{{ url('add-client') }}"><span>Add Client</span></a></li> 
+                                <!-- <li><a href="{{ url('admin-licence') }}"><span>Admin Licence</span></a></li> -->
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="javascript: void(0);"><i class="mdi mdi-apps"></i><span>Referral Coupon</span><span class="menu-arrow"><i class="mdi mdi-chevron-right"></i></span></a>
+                            <ul class="nav-second-level" aria-expanded="false">
+                                <li><a href="{{ url('create-coupan') }}"><span>Create Coupan</span></a></li> 
+                                <li><a href="{{ url('create-referral') }}"><span>Create Referral</span></a></li>
+                            </ul>
+                        </li>
+
+                        <li>
                             <a href="javascript: void(0);"><i class="mdi mdi-apps"></i><span>App</span><span class="menu-arrow"><i class="mdi mdi-chevron-right"></i></span></a>
                             <ul class="nav-second-level" aria-expanded="false">
                                 <li><a href="{{ url('app-chat') }}"><span>Chat</span></a></li>

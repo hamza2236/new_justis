@@ -242,29 +242,29 @@
                                             <div class="row days">
                                                 <div class="col-4">
                                                     <b>Monday</b>
-                                                    <input type="checkbox" name=""> 
+                                                    <input type="checkbox" name="" class="check-time"> 
                                                 </div>
                                                 <div class="col-4">
                                                     <b>Form</b>
-                                                    <input type="time" name=""> 
+                                                    <input type="time" name="" class="from-time"> 
                                                 </div>
                                                 <div class="col-4">
                                                     <b>To</b>
-                                                    <input type="time" name=""> 
+                                                    <input type="time" name="" class="to-time"> 
                                                 </div>
                                             </div>
                                             <div class="row days">
                                                 <div class="col-4">
                                                     <b>Tuesday</b>
-                                                    <input type="checkbox" name=""> 
+                                                    <input type="checkbox" name="" class="check-time"> 
                                                 </div>
                                                 <div class="col-4">
                                                     <b>Form</b>
-                                                    <input type="time" name=""> 
+                                                    <input type="time" name="" class="from-time"> 
                                                 </div>
                                                 <div class="col-4">
                                                     <b>To</b>
-                                                    <input type="time" name=""> 
+                                                    <input type="time" name="" class="to-time"> 
                                                 </div>
                                             </div>
                                             <div class="row days">
@@ -458,5 +458,6 @@
         preview.style.display = "block";
       }
     }
+
 </script>
 @endsection
