@@ -20,6 +20,6 @@ class IsAdmin
         if (Auth::check() &&  Auth::user()->user_type=='admin') {
             return $next($request);
         }
-        return redirect('home')->with('error','You have not admin access');
+        return redirect('auth-login');
     }
 }
