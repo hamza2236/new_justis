@@ -111,8 +111,21 @@ Route::get("create-new-refferal", function(){
 Route::get("lawyer-category", function(){
    return view("admin.lawyer-category");
 });
-
-
+Route::get("view-profile", function(){
+   return view("admin.view-profile");
+});
+Route::get("categories-list", function(){
+   return view("admin.categories-list");
+});
+Route::get("add-categories", function(){
+   return view("admin.add-categories");
+});
+Route::get("sub-categories-list", function(){
+   return view("admin.sub-categories-list");
+});
+Route::get("add-sub-categories", function(){
+   return view("admin.add-sub-categories");
+});
 // Mubashar End
 Route::get("forms-repeater", function(){
    return view("admin.forms-repeater");
