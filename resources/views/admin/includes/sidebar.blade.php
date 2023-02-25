@@ -28,7 +28,23 @@
                             <a href="javascript: void(0);"><i class="mdi mdi-apps"></i><span>Referral Coupon</span><span class="menu-arrow"><i class="mdi mdi-chevron-right"></i></span></a>
                             <ul class="nav-second-level" aria-expanded="false">
                                 <li><a href="{{ url('create-coupan') }}"><span>Create Coupan</span></a></li> 
-                                <li><a href="{{ url('create-referral') }}"><span>Create Referral</span></a></li>
+                                <li><a href="{{ url('create-refferal') }}"><span>Create Referral</span></a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="javascript: void(0);"><i class="mdi mdi-apps"></i><span>Personal Category</span><span class="menu-arrow"><i class="mdi mdi-chevron-right"></i></span></a>
+                            <ul class="nav-second-level" aria-expanded="false">
+                                <li><a href="{{ url('lawyer-category') }}"><span>Lawyer</span></a></li> 
+                                <li><a href=""><span>Bailiff</span></a></li>
+                                <li><a href=""><span>Notarie</span></a></li>
+                                <li><a href=""><span>Legal Representative</span></a></li>
+                                <li><a href=""><span>Chartered Accountant</span></a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="javascript: void(0);"><i class="mdi mdi-apps"></i><span>Pro Chat</span><span class="menu-arrow"><i class="mdi mdi-chevron-right"></i></span></a>
+                            <ul class="nav-second-level" aria-expanded="false">
+                                <li><a href="{{ url('app-chat') }}"><span>Chat</span></a></li>
                             </ul>
                         </li>
 
@@ -51,6 +67,8 @@
                                 <li><a href="{{ url('app-contact-list') }}"><span>Contact List</span></a></li>
                             </ul>
                         </li>
+
+                        
 
                        
 

@@ -102,6 +102,17 @@ Route::get("create-coupan", function(){
 Route::get("create-new-coupan", function(){
    return view("admin.create-new-coupan");
 });
+Route::get("create-refferal", function(){
+   return view("admin.create-refferal");
+});
+Route::get("create-new-refferal", function(){
+   return view("admin.create-new-refferal");
+});
+Route::get("lawyer-category", function(){
+   return view("admin.lawyer-category");
+});
+
+
 // Mubashar End
 Route::get("forms-repeater", function(){
    return view("admin.forms-repeater");
