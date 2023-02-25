@@ -46,7 +46,9 @@ class aboutController extends Controller
             
            ]);
       
-      dd("check");      
+      
+           return redirect()->back()->with('status','Thank you for contacting us');
+
       }
       
       

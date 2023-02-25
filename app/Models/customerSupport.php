@@ -15,7 +15,8 @@ class customerSupport extends Model
         'name',
         'email',
         'phone',
-        'note'
+        'note',
+        'subject'
         
     ];
 
