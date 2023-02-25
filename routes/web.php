@@ -4,7 +4,8 @@ use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\homeControllerME;
 use App\Http\Controllers\HomeController;
 use App\Http\Controllers\aboutController;
-
+use App\Models\Country;
+use App\Models\Pro_Category;
 
 
 /*
@@ -117,11 +118,13 @@ Route::get("ui-other-clipboard", function(){
 // pro route start//
 // pro route start//
 
-Route::get("auth-login-pro", function(){
+Route::get("pro/lgoin", function(){
   return view("pro.auth-login");
 });
-Route::get("auth-register-pro", function(){
-  return view("pro.auth-register");
+Route::get("pro/register", function(){
+  $all_countries=Country::all();
+  $pro_categories=Pro_Category::where('status',1)->get();
+  return view("pro.auth-register",['coutries'=>$all_countries,'pro_categories'=>$pro_categories]);
 });
 
 Route::group(['middleware'=>['IsPro']],function () {
@@ -199,74 +202,74 @@ Route::get("ui-other-clipboard-pro", function(){
 // client route start//
 // client route start//
 // client route start//
-Route::get("auth-login-client", function(){
+Route::get("client/login", function(){
   return view("client.auth-login");
 });
-Route::get("auth-register-client", function(){
+Route::get("client/register", function(){
   return view("client.auth-register");
 });
 
 
 Route::group(['middleware'=>['IsClient']],function () {
 
-Route::get("client-dashboard", function(){
-   return view("client.index");
-});
-Route::get("advanced-ratings-client", function(){
-   return view("client.advanced-ratings");
-});
-Route::get("advanced-sweetalerts-client", function(){
-  return view("client.advanced-sweetalerts");
-});
-Route::get("app-calendar-client", function(){
-  return view("client.app-calendar");
-});
-Route::get("app-chat-client", function(){
-  return view("client.app-chat");
-});
-Route::get("app-contact-list-client", function(){
-  return view("client.app-contact-list");
-});
+  Route::get("client-dashboard", function(){
+    return view("client.index");
+  });
+  Route::get("advanced-ratings-client", function(){
+    return view("client.advanced-ratings");
+  });
+  Route::get("advanced-sweetalerts-client", function(){
+    return view("client.advanced-sweetalerts");
+  });
+  Route::get("app-calendar-client", function(){
+    return view("client.app-calendar");
+  });
+  Route::get("app-chat-client", function(){
+    return view("client.app-chat");
+  });
+  Route::get("app-contact-list-client", function(){
+    return view("client.app-contact-list");
+  });
 
-Route::get("auth-recoverpw-client", function(){
-  return view("client.auth-recoverpw");
-});
-Route::get("charts-apex-client", function(){
-  return view("client.charts-apex");
-});
-Route::get("email-templates-alert-client", function(){
-  return view("client.email-templates-alert");
-});
-Route::get("forms-advanced-client", function(){
-  return view("client.forms-advanced");
-});
-Route::get("forms-editors-client", function(){
-  return view("client.forms-editors");
-});
-Route::get("forms-repeater-client", function(){
-  return view("client.forms-repeater");
-});
-Route::get("forms-uploads-client", function(){
-  return view("client.forms-uploads");
-});
-Route::get("forms-wizard-client", function(){
-  return view("client.forms-wizard");
-});
-Route::get("page-invoice-client", function(){
-  return view("client.page-invoice");
-});
-Route::get("page-pricing-client", function(){
-  return view("client.page-pricing");
-});
-Route::get("page-profile-client", function(){
-  return view("client.page-profile");
-});
-Route::get("tables-datatable-client", function(){
-  return view("client.tables-datatable");
-});
-Route::get("ui-other-clipboard-client", function(){
-  return view("client.ui-other-clipboard");
-});
+  Route::get("auth-recoverpw-client", function(){
+    return view("client.auth-recoverpw");
+  });
+  Route::get("charts-apex-client", function(){
+    return view("client.charts-apex");
+  });
+  Route::get("email-templates-alert-client", function(){
+    return view("client.email-templates-alert");
+  });
+  Route::get("forms-advanced-client", function(){
+    return view("client.forms-advanced");
+  });
+  Route::get("forms-editors-client", function(){
+    return view("client.forms-editors");
+  });
+  Route::get("forms-repeater-client", function(){
+    return view("client.forms-repeater");
+  });
+  Route::get("forms-uploads-client", function(){
+    return view("client.forms-uploads");
+  });
+  Route::get("forms-wizard-client", function(){
+    return view("client.forms-wizard");
+  });
+  Route::get("page-invoice-client", function(){
+    return view("client.page-invoice");
+  });
+  Route::get("page-pricing-client", function(){
+    return view("client.page-pricing");
+  });
+  Route::get("page-profile-client", function(){
+    return view("client.page-profile");
+  });
+  Route::get("tables-datatable-client", function(){
+    return view("client.tables-datatable");
+  });
+  Route::get("ui-other-clipboard-client", function(){
+    return view("client.ui-other-clipboard");
+  });
 });
 // client route end//
 // client route end//
