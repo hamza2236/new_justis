@@ -7,11 +7,9 @@
                 <div class="topbar-left">
                     <a href="{{ url('admin-dashboard') }}" class="logo">
                         <span>
-                            <img src="admin/assets/images/logo-sm.png" alt="logo-small" class="logo-sm">
+                            <img src="{{ url('assets/img/logo.png')}}" alt="logo-small" class="logo-m" style="width:60px">
                         </span>
-                        <span>
-                            <img src="admin/assets/images/logo-dark.png" alt="logo-large" class="logo-lg">
-                        </span>
+                        
                     </a>
                 </div>
     
@@ -70,9 +68,6 @@
                         </a>
                         <div class="dropdown-menu dropdown-menu-right">
                             <a class="dropdown-item" href="#"><i class="dripicons-user text-muted mr-2"></i> Profile</a>
-                            <a class="dropdown-item" href="#"><i class="dripicons-wallet text-muted mr-2"></i> My Wallet</a>
-                            <a class="dropdown-item" href="#"><i class="dripicons-gear text-muted mr-2"></i> Settings</a>
-                            <a class="dropdown-item" href="#"><i class="dripicons-lock text-muted mr-2"></i> Lock screen</a>
                             <div class="dropdown-divider"></div>
                             <a class="dropdown-item" href="#"><i class="dripicons-exit text-muted mr-2"></i> Logout</a>
                         </div>
@@ -106,7 +101,7 @@
                     <img src="admin/assets/images/users/user-1.jpg" alt="user" class="rounded-circle img-thumbnail mb-1">
                     <span class="online-icon"><i class="mdi mdi-record text-success"></i></span>
                     <div class="media-body">
-                        <h5 class="text-light">Mr. Michael Hill </h5>
+                        <h5 class="text-light">Mr. Rob Smith </h5>
                         <ul class="list-unstyled list-inline mb-0 mt-2">
                             <li class="list-inline-item">
                                 <a href="#" class=""><i class="mdi mdi-account text-light"></i></a>
@@ -124,10 +119,10 @@
                 <div class="row">
                     <div class="col-sm-12">
                         <div class="page-title-box">
-                            <div class="float-right align-item-center mt-2">
+                            <!-- <div class="float-right align-item-center mt-2">
                                 <button class="btn btn-info px-4 align-self-center report-btn">Create Report</button>
                             </div>
-                            <h4 class="page-title mb-2"><i class="mdi mdi-calendar mr-2"></i>Calendar</h4>  
+                          -->
                             <div class="">
                                 <ol class="breadcrumb">
                                     <li class="breadcrumb-item"><a href="javascript:void(0);">Frogetor</a></li>

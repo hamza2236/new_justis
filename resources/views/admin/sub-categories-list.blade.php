@@ -4,15 +4,15 @@
 <html lang="en">
     <head>
         <meta charset="utf-8" />
-        <title>justiscall - Admin</title>
-         <!-- App favicon -->
-         <link rel="shortcut icon" href="{{ url('assets/img/logo.png')}}">
+      <!-- App favicon -->
+      <link rel="shortcut icon" href="{{ url('assets/img/logo.png')}}">
 
+         
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta content="A premium admin dashboard template by themesbrand" name="description" />
         <meta content="Mannatthemes" name="author" />
 
-
+      
         <!-- DataTables -->
         <link href="admin/assets/plugins/datatables/dataTables.bootstrap4.min.css" rel="stylesheet" type="text/css" />
         <link href="admin/assets/plugins/datatables/buttons.bootstrap4.min.css" rel="stylesheet" type="text/css" />
@@ -49,8 +49,8 @@
                             <div class="col-12">
                                 <div class="card">
                                     <div class="card-body">
-        
-                                        <h4 class="mt-0 header-title">Create Coupan</h4>
+         
+                                        <h4 class="mt-0 header-title">Sub Categories List</h4>
                                         <p class="text-muted mb-4 font-13">
                                             Welcome to JUSTISCALL
                                         </p>
@@ -58,14 +58,22 @@
                                         <table id="datatable-buttons" class="table table-striped table-bordered dt-responsive nowrap" style="border-collapse: collapse; border-spacing: 0; width: 100%;">
                                             <thead>
                                             <tr>
-                                                <th>Promo Code</th>
-                                                <th>Discount</th>
-                                                <th>Expiration</th>
-                                                <th>Discount Type</th>
+                                                <th>SL NO</th>
+                                                <th>SERVICES NAME</th>
+                                                <th>SPECIAlITIES</th>
                                                 <th>ACTION</th>
                                             </tr>
                                             </thead>
                                             <tbody>
+                                                <tr>
+                                                    <td>1</td>
+                                                    <td>Trust Law</td>
+                                                    <td>Lawyer</td>
+                                                    <td class="action">
+                                                        <a href=""><i class="mdi mdi-pencil-box-outline"></i></a>
+                                                        <a href="" class="ml-2"><i class="mdi mdi-delete"></i> </a>
+                                                    </td>
+                                                </tr>
 
                                             </tbody>
                                         </table>        

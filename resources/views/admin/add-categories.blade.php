@@ -9,29 +9,29 @@
          <link rel="shortcut icon" href="{{ url('assets/img/logo.png')}}">
 
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <meta content="A premium admin dashboard template by themesbrand" name="description" />
+        <meta content="" name="description" />
         <meta content="Mannatthemes" name="author" />
 
         <!-- Clock css -->
-        <link href="admin/assets/plugins/daterangepicker/daterangepicker.css" rel="stylesheet" />
+        <link href="{{ url('admin/assets/plugins/daterangepicker/daterangepicker.css')}}" rel="stylesheet" />
         <!-- Plugins css -->
-        <link href="admin/assets/plugins/timepicker/tempusdominus-bootstrap-4.css" rel="stylesheet" />
-        <link href="admin/assets/plugins/timepicker/bootstrap-material-datetimepicker.css" rel="stylesheet">
-        <link href="admin/assets/plugins/clockpicker/jquery-clockpicker.min.css" rel="stylesheet" />
-        <link href="admin/assets/plugins/colorpicker/asColorPicker.min.css" rel="stylesheet" type="text/css" />
-        <link href="admin/assets/plugins/select2/select2.min.css" rel="stylesheet" type="text/css" />
+        <link href="{{ url('admin/assets/plugins/timepicker/tempusdominus-bootstrap-4.css')}}" rel="stylesheet" />
+        <link href="{{ url('admin/assets/plugins/timepicker/bootstrap-material-datetimepicker.css')}}" rel="stylesheet">
+        <link href="{{ url('admin/assets/plugins/clockpicker/jquery-clockpicker.min.css')}}" rel="stylesheet" />
+        <link href="{{ url('admin/assets/plugins/colorpicker/asColorPicker.min.css')}}" rel="stylesheet" type="text/css" />
+        <link href="{{ url('admin/assets/plugins/select2/select2.min.css')}}" rel="stylesheet" type="text/css" />
 
-        <link href="admin/assets/plugins/bootstrap-colorpicker/css/bootstrap-colorpicker.min.css" rel="stylesheet">
-        <link href="admin/assets/plugins/bootstrap-datepicker/css/bootstrap-datepicker.min.css" rel="stylesheet">
-        <link href="admin/assets/plugins/bootstrap-touchspin/css/jquery.bootstrap-touchspin.min.css" rel="stylesheet" /> 
+        <link href="{{ url('admin/assets/plugins/bootstrap-colorpicker/css/bootstrap-colorpicker.min.css')}}" rel="stylesheet">
+        <link href="{{ url('admin/assets/plugins/bootstrap-datepicker/css/bootstrap-datepicker.min.css')}}" rel="stylesheet">
+        <link href="{{ url('admin/assets/plugins/bootstrap-touchspin/css/jquery.bootstrap-touchspin.min.css')}}" rel="stylesheet" /> 
 
         
 
         <!-- App css -->
-        <link href="admin/assets/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
-        <link href="admin/assets/css/icons.css" rel="stylesheet" type="text/css" />
-        <link href="admin/assets/css/metismenu.min.css" rel="stylesheet" type="text/css" />
-        <link href="admin/assets/css/style.css" rel="stylesheet" type="text/css" />
+        <link href="{{ url('admin/assets/css/bootstrap.min.css')}}" rel="stylesheet" type="text/css" />
+        <link href="{{ url('admin/assets/css/icons.css')}}" rel="stylesheet" type="text/css" />
+        <link href="{{ url('admin/assets/css/metismenu.min.css')}}" rel="stylesheet" type="text/css" />
+        <link href="{{ url('admin/assets/css/style.css')}}" rel="stylesheet" type="text/css" />
         <style id="clock-animations"></style>
 
     </head>
@@ -56,35 +56,45 @@
                             <div class="col-lg-12">
                                 <div class="card">
                                     <div class="card-body bootstrap-select-1">
-                                        <h4 class="header-title mt-0">Create New Coupan</h4>
+                                        <h4 class="header-title mt-0">Add Categories</h4>
                                         <p class="text-muted mb-4 font-13">
                                             Welcome to JUSTISCALL 
                                         </p>
-
                                         <div class="row">
                                             <div class="col-md-6 mb-3 ">
-                                                <h6 class=" input-title mt-0">Promo Code</h6>
+                                                <h6 class=" input-title mt-0">Category Name</h6>
                                                 <input type="text" class="form-control" name="defaultconfig" id="defaultconfig" />
-                                            </div>
-                                            <div class="col-md-6 mb-3 ">
-                                                <h6 class=" input-title mt-0">Discount</h6>
-                                                <input type="number" class="form-control" name="defaultconfig" id="defaultconfig" />
-                                            </div>
-                                            <div class="col-md-6 mb-3 ">
-                                                <h6 class=" input-title mt-0">expiration Date</h6>
-                                                <input type="date" class="form-control" name="defaultconfig" id="defaultconfig" />
                                             </div>
 
                                             <div class="col-md-6 mb-3">
-                                                <h6 class="input-title mt-0">Discount Type</h6>
+                                                <h6 class="input-title mt-0">Category Type</h6>
                                                 <select class="select2 form-control mb-3 custom-select" style="width: 100%; height:36px;">
                                                         <option disabled selected>Select</option>
-                                                        <option value="free">Percentage</option>
-                                                        <option value="paid">Amount</option>
+                                                        <option value="personal">Personal</option>
+                                                        <option value="firm">Firm</option>
                                                     </optgroup>
                                                 </select>
                                             </div>
 
+                                            <div class="col-md-6 mb-3">
+                                                <h6 class=" input-title mt-0">Amount</h6>
+                                                <input type="number" class="form-control" name="defaultconfig" id="defaultconfig" />
+                                            </div>
+
+                                            <div class="col-md-6 mb-3">
+                                                <h6 class=" input-title mt-0">Discount</h6>
+                                                <input type="number" class="form-control" name="defaultconfig" id="defaultconfig" />
+                                            </div>
+
+                                            <div class="col-md-6 mb-3">
+                                                <h6 class="input-title mt-0">Status</h6>
+                                                <select class="select2 form-control mb-3 custom-select" style="width: 100%; height:36px;">
+                                                        <option disabled selected>Select</option>
+                                                        <option value="enabled">Enabled</option>
+                                                        <option value="disabled">Disabled</option>
+                                                    </optgroup>
+                                                </select>
+                                            </div>
 
                                             <div class="col-md-8 mb-3"></div>
                                             <div class="col-md-2 mb-3">

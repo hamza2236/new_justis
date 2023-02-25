@@ -43,76 +43,25 @@
                 <div class="page-content">
                     <div class="container-fluid"> 
                         
-                        <div class="row">
-                            <div class="col-lg-12">
-                                <div class="card">
-                                    <div class="card-body bootstrap-select-1">
-                                        <h4 class="header-title mt-0">Licence Management</h4>
-                                        <p class="text-muted mb-4 font-13">
-                                            Welcome to JUSTISCALL 
-                                        </p>
-                                        <div class="row">
-
-                                            <div class="col-md-2 mb-3">
-                                                <select class="select2 form-control mb-3 custom-select" style="width: 100%; height:36px;">
-                                                        <option disabled selected>Subscription Type</option>
-                                                        <option value="free">Free</option>
-                                                        <option value="paid">Paid</option>
-                                                        <option value="un-subscribes">Un Subscribes</option>
-                                                    </optgroup>
-                                                </select>
-                                            </div>
-                                            <div class="col-md-2 mb-3">
-                                                <select class="select2 form-control mb-3 custom-select" style="width: 100%; height:36px;">
-                                                        <option disabled selected>Validity</option>
-                                                        <option value="1year">Bellow 1 Year</option>
-                                                        <option value="2year">Bellow 2 Year</option>
-                                                    </optgroup>
-                                                </select>
-                                            </div>
-                                            <div class="col-md-2 mb-3">
-                                                <select class="select2 form-control mb-3 custom-select" style="width: 100%; height:36px;">
-                                                        <option disabled selected>Expires in </option>
-                                                        <option value="today">Today</option>
-                                                        <option value="tomorrow">Tomorrow</option>
-                                                        <option value="week">Week</option>
-                                                    </optgroup>
-                                                </select>
-                                            </div>
-
-
-                                            <div class="col-md-2 mb-3 ">
-                                                <input type="text" class="form-control" name="defaultconfig" id="defaultconfig" placeholder="Enter Pro Name" />
-                                                
-                                            </div>
-
-                                            
-
-                                            <div class="col-md-2 mb-3"></div>
-                                            <div class="col-md-2 mb-3">
-                                                <input type="submit" name="" class="btn-submit form-control" value="Filter">
-                                            </div>
-                                                                                           
-                                        </div>
-                                    </div>
-                                </div>                                
-                            </div> <!-- end col -->
-                        </div> <!-- end row --> 
         
                         <div class="row">
                             <div class="col-12">
                                 <div class="card">
                                     <div class="card-body">
         
+                                        <h4 class="mt-0 header-title">Categories List</h4>
+                                        <p class="text-muted mb-4 font-13">
+                                            Welcome to JUSTISCALL
+                                        </p>
+        
                                         <table id="datatable-buttons" class="table table-striped table-bordered dt-responsive nowrap" style="border-collapse: collapse; border-spacing: 0; width: 100%;">
                                             <thead>
                                             <tr>
-                                                <th>Sl NO</th>
-                                                <th>SUBSCRIPTION NAME</th>
-                                                <th>SUBSCRIPTION TYPE</th>
-                                                <th>VALIDITY</th>
-                                                <th>DURATION</th>
-                                                <th>COST</th>
+                                                <th>NO</th>
+                                                <th>Category NAME</th>
+                                                <th>TYPE</th>
+                                                <th>Fees</th>
+                                                <th>Discount</th>
                                                 <th>STATUS</th>
                                                 <th>ACTION</th>
                                             </tr>
@@ -121,10 +70,9 @@
                                                 <tr>
                                                     <td>1</td>
                                                     <td>Justiscall PRO</td>
-                                                    <td>paid</td>
-                                                    <td>1</td>
-                                                    <td>month</td>
-                                                    <td>60</td>
+                                                    <td>Personal</td>
+                                                    <td>100</td>
+                                                    <td>20</td>
                                                     <td><button class="btn-success rounded">Enable</button></td>
                                                     <td class="action">
                                                         <a href=""><i class="mdi mdi-pencil-box-outline"></i></a>
@@ -134,10 +82,9 @@
                                                 <tr>
                                                     <td>1</td>
                                                     <td>Justiscall PRO</td>
-                                                    <td>paid</td>
-                                                    <td>1</td>
-                                                    <td>month</td>
-                                                    <td>60</td>
+                                                    <td>Personal</td>
+                                                    <td>100</td>
+                                                    <td>30</td>
                                                     <td><button class="btn-danger rounded">Disable</button></td>
                                                     <td class="action">
                                                         <a href=""><i class="mdi mdi-pencil-box-outline"></i></a>
@@ -196,10 +143,6 @@
 <style>
     .action .mdi{
         font-size: 20px;
-    }
-    .btn-submit, .btn-cancel{
-        background-image: linear-gradient(180deg,#2b2b48 0%,#224858 50%);
-        color: #fff;
     }
 </style>
 @endsection
