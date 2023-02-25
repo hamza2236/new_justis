@@ -256,7 +256,7 @@ Route::get("auth-register-client", function(){
 });
 
 
-Route::group(['middleware'=>['IsClient']],function () {
+// Route::group(['middleware'=>['IsClient']],function () {
 
 Route::get("client-dashboard", function(){
    return view("client.index");
@@ -269,9 +269,6 @@ Route::get("advanced-sweetalerts-client", function(){
 });
 Route::get("app-calendar-client", function(){
   return view("client.app-calendar");
-});
-Route::get("app-chat-client", function(){
-  return view("client.app-chat");
 });
 Route::get("app-contact-list-client", function(){
   return view("client.app-contact-list");
@@ -307,16 +304,29 @@ Route::get("page-invoice-client", function(){
 Route::get("page-pricing-client", function(){
   return view("client.page-pricing");
 });
+// Mubashar Start
+Route::get("app-chat-client", function(){
+  return view("client.app-chat");
+});
 Route::get("page-profile-client", function(){
   return view("client.page-profile");
 });
+Route::get("change-password-client", function(){
+  return view("client.change-password-client");
+});
+Route::get("find-professional-client", function(){
+  return view("client.find-professional-client");
+});
+
+// Mubashar End
+
 Route::get("tables-datatable-client", function(){
   return view("client.tables-datatable");
 });
 Route::get("ui-other-clipboard-client", function(){
   return view("client.ui-other-clipboard");
 });
-});
+// });
 // client route end//
 // client route end//
 // client route end//
