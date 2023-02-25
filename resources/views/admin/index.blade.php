@@ -4,21 +4,21 @@
 <html lang="en">
     <head>
         <meta charset="utf-8" />
-        <title>Frogetor - Responsive Bootstrap 4 Admin Dashboard</title>
+        <title>justiscall - Admin</title>
+         <!-- App favicon -->
+         <link rel="shortcut icon" href="{{ url('assets/img/logo.png')}}">
+
+         
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <meta content="A premium admin dashboard template by themesbrand" name="description" />
-        <meta content="Mannatthemes" name="author" />
-
-        <!-- App favicon -->
-        <link rel="shortcut icon" href="admin/assets/images/favicon.ico">
-
-        <link href="admin/assets/plugins/jvectormap/jquery-jvectormap-2.0.2.css" rel="stylesheet">
+        <meta content="" name="description" />
+        <meta content="" name="author" />
+        <link href="{{ url('admin/assets/plugins/jvectormap/jquery-jvectormap-2.0.2.css')}}" rel="stylesheet">
 
         <!-- App css -->
-        <link href="admin/assets/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
-        <link href="admin/assets/css/icons.css" rel="stylesheet" type="text/css" />
-        <link href="admin/assets/css/metismenu.min.css" rel="stylesheet" type="text/css" />
-        <link href="admin/assets/css/style.css" rel="stylesheet" type="text/css" />
+        <link href="{{ url('admin/assets/css/bootstrap.min.css')}}" rel="stylesheet" type="text/css" />
+        <link href="{{ url('admin/assets/css/icons.css')}}" rel="stylesheet" type="text/css" />
+        <link href="{{ url('admin/assets/css/metismenu.min.css')}}" rel="stylesheet" type="text/css" />
+        <link href="{{ url('admin/assets/css/style.css')}}" rel="stylesheet" type="text/css" />
 
     </head>
 
@@ -196,7 +196,7 @@
                                         <div class="row">                                        
                                             <div class="col-md-4">
                                                 <div class="mt-2">
-                                                    <img src="assets/images/flags/us_flag.jpg" alt="" class="mb-2" height="30">
+                                                    <img src="admin/assets/images/flags/us_flag.jpg" alt="" class="mb-2" height="30">
                                                     <h5 class="mb-3">Our most customers in America <span class="badge badge-primary">March 2019</span></h5>
                                                     <p class="font-13 text-muted mb-0"> But who has any right to find fault with a man who 
                                                         chooses to enjoy a pleasure that 
@@ -209,7 +209,7 @@
                                                 <div class="row mt-4">
                                                     <div class="col-md-6">
                                                         <p class="mb-2 text-muted font-13">Domestic Customers</p>
-                                                        <h3 class="mt-0"><img src="assets/images/flags/us_flag.jpg" alt="" class="mr-2 thumb-xs rounded-circle">2.8k</h3>
+                                                        <h3 class="mt-0"><img src="admin/assets/images/flags/us_flag.jpg" alt="" class="mr-2 thumb-xs rounded-circle">2.8k</h3>
                                                         <div class="progress mt-2  mx-auto" style="height:3px;">
                                                             <div class="progress-bar bg-success" role="progressbar" style="width: 75%" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
                                                         </div>
@@ -253,12 +253,12 @@
                                                 <tbody>
                                                     <tr>
                                                         <td>
-                                                            <img class="" src="assets/images/products/img-1.png" alt="user"> </td>
+                                                            <img class="" src="admin/assets/images/products/img-1.png" alt="user"> </td>
                                                         <td>
                                                             Beg
                                                         </td>
                                                         <td>                                                                
-                                                            <img src="assets/images/flags/us_flag.jpg" alt="" class="img-flag thumb-xxs rounded-circle">
+                                                            <img src="admin/assets/images/flags/us_flag.jpg" alt="" class="img-flag thumb-xxs rounded-circle">
                                                         </td>
                                                         <td>3/03/2019 4:29 PM</td>
                                                         <td>200</td>                                   
@@ -269,12 +269,12 @@
                                                     </tr><!--end tr-->
                                                     <tr>
                                                         <td>
-                                                            <img class="" src="assets/images/products/img-2.png" alt="user"> </td>
+                                                            <img class="" src="admin/assets/images/products/img-2.png" alt="user"> </td>
                                                         <td>
                                                             Watch
                                                         </td>
                                                         <td>                                                                
-                                                            <img src="assets/images/flags/french_flag.jpg" alt="" class="img-flag thumb-xxs rounded-circle">
+                                                            <img src="admin/assets/images/flags/french_flag.jpg" alt="" class="img-flag thumb-xxs rounded-circle">
                                                         </td>
                                                         <td>13/03/2019 1:09 PM</td>
                                                         <td>180</td>                                   
@@ -285,12 +285,12 @@
                                                     </tr><!--end tr-->
                                                     <tr>
                                                         <td>
-                                                            <img class="" src="assets/images/products/img-3.png" alt="user"> </td>
+                                                            <img class="" src="admin/assets/images/products/img-3.png" alt="user"> </td>
                                                         <td>
                                                             Headphone
                                                         </td>
                                                         <td>                                                                
-                                                            <img src="assets/images/flags/spain_flag.jpg" alt="" class="img-flag thumb-xxs rounded-circle">
+                                                            <img src="admin/assets/images/flags/spain_flag.jpg" alt="" class="img-flag thumb-xxs rounded-circle">
                                                         </td>
                                                         <td>22/03/2019 12:09 PM</td>
                                                         <td>30</td>                                   
@@ -301,12 +301,12 @@
                                                     </tr><!--end tr-->
                                                     <tr>
                                                         <td>
-                                                            <img class="" src="assets/images/products/img-4.png" alt="user"> </td>
+                                                            <img class="" src="admin/assets/images/products/img-4.png" alt="user"> </td>
                                                         <td>
                                                             Purse
                                                         </td>
                                                         <td>                                                                
-                                                            <img src="assets/images/flags/russia_flag.jpg" alt="" class="img-flag thumb-xxs rounded-circle">
+                                                            <img src="admin/assets/images/flags/russia_flag.jpg" alt="" class="img-flag thumb-xxs rounded-circle">
                                                         </td>
                                                         <td>14/03/2019 8:27 PM</td>
                                                         <td>100</td>                                   
@@ -317,12 +317,12 @@
                                                     </tr><!--end tr-->
                                                     <tr>
                                                         <td>
-                                                            <img class="" src="assets/images/products/img-5.png" alt="user"> </td>
+                                                            <img class="" src="admin/assets/images/products/img-5.png" alt="user"> </td>
                                                         <td>
                                                             Shoe
                                                         </td>
                                                         <td>                                                                
-                                                            <img src="assets/images/flags/italy_flag.jpg" alt="" class="img-flag thumb-xxs rounded-circle">
+                                                            <img src="admin/assets/images/flags/italy_flag.jpg" alt="" class="img-flag thumb-xxs rounded-circle">
                                                         </td>
                                                         <td>18/03/2019 5:09 PM</td>
                                                         <td>100</td>                                   
@@ -333,12 +333,12 @@
                                                     </tr><!--end tr-->
                                                     <tr>
                                                         <td>
-                                                            <img class="" src="assets/images/products/img-6.png" alt="user"> </td>
+                                                            <img class="" src="admin/assets/images/products/img-6.png" alt="user"> </td>
                                                         <td>
                                                             Boll
                                                         </td>
                                                         <td>                                                                
-                                                            <img src="assets/images/flags/us_flag.jpg" alt="" class="img-flag thumb-xxs rounded-circle">
+                                                            <img src="admin/assets/images/flags/us_flag.jpg" alt="" class="img-flag thumb-xxs rounded-circle">
                                                         </td>
                                                         <td>30/03/2019 4:29 PM</td>
                                                         <td>140</td>                                   
@@ -372,7 +372,7 @@
                                             <div class="carousel-inner">
                                                 <div class="carousel-item active">
                                                     <div class="text-center">
-                                                        <img src="assets/images/users/user-4.jpg" alt="user" class="rounded-circle thumb-xl img-thumbnail mb-1">
+                                                        <img src="admin/assets/images/users/user-4.jpg" alt="user" class="rounded-circle thumb-xl img-thumbnail mb-1">
                                                         <h5>Nancy Flanary</h5>
                                                         <p class="font-12 text-muted"><i class="fas fa-globe mr-2"></i>USA Dealer</p>
                                                         <p class="mb-0 text-muted">Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin.</p>
@@ -384,7 +384,7 @@
                                                 </div>
                                                 <div class="carousel-item">
                                                     <div class="text-center">
-                                                        <img src="assets/images/users/user-2.jpg" alt="user" class="rounded-circle thumb-xl img-thumbnail mb-1">
+                                                        <img src="admin/assets/images/users/user-2.jpg" alt="user" class="rounded-circle thumb-xl img-thumbnail mb-1">
                                                         <h5>Donald Gardner</h5>
                                                         <p class="font-12 text-muted"><i class="fas fa-globe mr-2"></i>Russia Dealer</p>
                                                         <p class="mb-0 text-muted">Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin.</p>
@@ -396,7 +396,7 @@
                                                 </div>
                                                 <div class="carousel-item">
                                                     <div class="text-center">
-                                                        <img src="assets/images/users/user-1.jpg" alt="user" class="rounded-circle thumb-xl img-thumbnail mb-1">
+                                                        <img src="admin/assets/images/users/user-1.jpg" alt="user" class="rounded-circle thumb-xl img-thumbnail mb-1">
                                                         <h5>Matt Rosales</h5>
                                                         <p class="font-12 text-muted"><i class="fas fa-globe mr-2"></i>Spain Dealer</p>
                                                         <p class="mb-0 text-muted">Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin.</p>
@@ -436,7 +436,7 @@
                                             <div class="carousel-inner">
                                                 <div class="carousel-item active">
                                                     <div class="media">
-                                                        <img src="assets/images/flags/us_flag.jpg" class="mr-2 thumb-xs rounded-circle" alt="...">
+                                                        <img src="admin/assets/images/flags/us_flag.jpg" class="mr-2 thumb-xs rounded-circle" alt="...">
                                                         <div class="media-body align-self-center">                                                                                                                       
                                                             <h6 class="m-0">USA Store</h6>
                                                         </div>
@@ -458,7 +458,7 @@
                                                 </div>
                                                 <div class="carousel-item">
                                                     <div class="media">
-                                                        <img src="assets/images/flags/spain_flag.jpg" class="mr-2 thumb-xs rounded-circle" alt="...">
+                                                        <img src="admin/assets/images/flags/spain_flag.jpg" class="mr-2 thumb-xs rounded-circle" alt="...">
                                                         <div class="media-body align-self-center">                                                                                                                       
                                                             <h6 class="m-0">Spain Store</h6>
                                                         </div>
@@ -480,7 +480,7 @@
                                                 </div>
                                                 <div class="carousel-item">
                                                     <div class="media">
-                                                        <img src="assets/images/flags/russia_flag.jpg" class="mr-2 thumb-xs rounded-circle" alt="...">
+                                                        <img src="admin/assets/images/flags/russia_flag.jpg" class="mr-2 thumb-xs rounded-circle" alt="...">
                                                         <div class="media-body align-self-center">                                                                                                                       
                                                             <h6 class="m-0">Russia Store</h6>
                                                         </div>
@@ -536,7 +536,7 @@
                     </div><!-- container -->
 
                     <footer class="footer text-center text-sm-left">
-                        &copy; 2019 Frogetor <span class="text-muted d-none d-sm-inline-block float-right">Crafted with <i class="mdi mdi-heart text-danger"></i> by Mannatthemes</span>
+                        &copy; 2023 justiscall <span class="text-muted d-none d-sm-inline-block float-right">Crafted with <i class="mdi mdi-heart text-danger"></i> by Mannatthemes</span>
                     </footer>
                 </div>
                 <!-- end page content -->
@@ -545,24 +545,24 @@
         <!-- end page-wrapper -->
 
         <!-- jQuery  -->
-        <script src="admin/assets/js/jquery.min.js"></script>
-        <script src="admin/assets/js/bootstrap.bundle.min.js"></script>
-        <script src="admin/assets/js/metisMenu.min.js"></script>
-        <script src="admin/assets/js/waves.min.js"></script>
-        <script src="admin/assets/js/jquery.slimscroll.min.js"></script>
+        <script src="{{ url('admin/assets/js/jquery.min.js')}}"></script>
+        <script src="{{ url('admin/assets/js/bootstrap.bundle.min.js')}}"></script>
+        <script src="{{ url('admin/assets/js/metisMenu.min.js')}}"></script>
+        <script src="{{ url('admin/assets/js/waves.min.js')}}"></script>
+        <script src="{{ url('admin/assets/js/jquery.slimscroll.min.js')}}"></script>
 
-        <script src="admin/assets/plugins/jvectormap/jquery-jvectormap-2.0.2.min.js"></script>
-        <script src="admin/assets/plugins/jvectormap/jquery-jvectormap-world-mill-en.js"></script>
+        <script src="{{ url('admin/assets/plugins/jvectormap/jquery-jvectormap-2.0.2.min.js')}}"></script>
+        <script src="{{ url('admin/assets/plugins/jvectormap/jquery-jvectormap-world-mill-en.js')}}"></script>
 
-        <script src="admin/assets/plugins/moment/moment.js"></script>
-        <script src="admin/assets/plugins/apexcharts/apexcharts.min.js"></script>
+        <script src="{{ url('admin/assets/plugins/moment/moment.js')}}"></script>
+        <script src="{{ url('admin/assets/plugins/apexcharts/apexcharts.min.js') }}"></script>
         <script src="https://apexcharts.com/samples/assets/irregular-data-series.js"></script>
         <script src="https://apexcharts.com/samples/assets/series1000.js"></script>
         <script src="https://apexcharts.com/samples/assets/ohlc.js"></script>
-        <script src="admin/assets/pages/jquery.dashboard.init.js"></script>
+        <script src="{{ url('admin/assets/pages/jquery.dashboard.init.js')}}"></script>
 
         <!-- App js -->
-        <script src="admin/assets/js/app.js"></script>
+        <script src="{{ url('admin/assets/js/app.js')}}"></script>
 
     </body>
 </html>
