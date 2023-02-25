@@ -107,6 +107,15 @@
         </div>
     </section>
     <!--==============================About Area ==============================-->
+
+@if(Session::has('status'))
+
+<script>
+swal("success", "Thank you for contacting us", "success");
+</script>
+
+@endif
+
     <form action='{{ url("customer-support") }}' method="POST" >
     @csrf
      <div class="space contact-section style4 background-image shape-mockup-wrap" style="background-image: url(&quot;assets/img/bg/contact_bg.jpg&quot;);">
