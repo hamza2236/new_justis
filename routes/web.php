@@ -25,6 +25,8 @@ Route::get('contact', [aboutController::class,'contact']);
 Route::get('faq', [aboutController::class,'faq']);
 Route::get('privacy', [aboutController::class,'privacy']);
 Route::get('terms-and-conditions', [aboutController::class,'termsConditions']);
+Route::post('customer-support', [aboutController::class,'customerSupport']);
+
 
 
 

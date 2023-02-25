@@ -3,6 +3,9 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use App\Models\customerSupport;
+use Illuminate\Support\Facades\Validator;
+
 
 class aboutController extends Controller
 {
@@ -30,6 +33,20 @@ class aboutController extends Controller
       {
             return view('terms-and-conditions');
             
+      }
+      public function customerSupport(REQUEST $req)
+      {
+  
+            customerSupport::create([
+            'name' => $req->name,
+            'email'=>$req->email,
+            'phone'=>$req->phone,
+            'subject'=>$req->subject,
+            'note'=>$req->note
+            
+           ]);
+      
+      dd("check");      
       }
       
       
