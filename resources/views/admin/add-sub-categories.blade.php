@@ -12,6 +12,7 @@
         <meta content="A premium admin dashboard template by themesbrand" name="description" />
         <meta content="Mannatthemes" name="author" />
 
+
         <!-- Clock css -->
         <link href="admin/assets/plugins/daterangepicker/daterangepicker.css" rel="stylesheet" />
         <!-- Plugins css -->
@@ -56,35 +57,35 @@
                             <div class="col-lg-12">
                                 <div class="card">
                                     <div class="card-body bootstrap-select-1">
-                                        <h4 class="header-title mt-0">Create New Coupan</h4>
+                                        <h4 class="header-title mt-0">Add Sub Categories</h4>
                                         <p class="text-muted mb-4 font-13">
                                             Welcome to JUSTISCALL 
                                         </p>
-
                                         <div class="row">
-                                            <div class="col-md-6 mb-3 ">
-                                                <h6 class=" input-title mt-0">Promo Code</h6>
+                                            <div class="col-md-12 mb-3 ">
+                                                <h6 class=" input-title mt-0">Sub Category Name</h6>
                                                 <input type="text" class="form-control" name="defaultconfig" id="defaultconfig" />
-                                            </div>
-                                            <div class="col-md-6 mb-3 ">
-                                                <h6 class=" input-title mt-0">Discount</h6>
-                                                <input type="number" class="form-control" name="defaultconfig" id="defaultconfig" />
-                                            </div>
-                                            <div class="col-md-6 mb-3 ">
-                                                <h6 class=" input-title mt-0">expiration Date</h6>
-                                                <input type="date" class="form-control" name="defaultconfig" id="defaultconfig" />
                                             </div>
 
                                             <div class="col-md-6 mb-3">
-                                                <h6 class="input-title mt-0">Discount Type</h6>
+                                                <h6 class="input-title mt-0">Sub Category Type</h6>
                                                 <select class="select2 form-control mb-3 custom-select" style="width: 100%; height:36px;">
                                                         <option disabled selected>Select</option>
-                                                        <option value="free">Percentage</option>
-                                                        <option value="paid">Amount</option>
+                                                        <option value="personal">Personal</option>
+                                                        <option value="firm">Firm</option>
                                                     </optgroup>
                                                 </select>
                                             </div>
 
+                                            <div class="col-md-6 mb-3">
+                                                <h6 class="input-title mt-0">Status</h6>
+                                                <select class="select2 form-control mb-3 custom-select" style="width: 100%; height:36px;">
+                                                        <option disabled selected>Select</option>
+                                                        <option value="enabled">Enabled</option>
+                                                        <option value="disabled">Disabled</option>
+                                                    </optgroup>
+                                                </select>
+                                            </div>
 
                                             <div class="col-md-8 mb-3"></div>
                                             <div class="col-md-2 mb-3">
@@ -93,11 +94,7 @@
                                             <div class="col-md-2 mb-3">
                                                 <input type="submit" name="" class="btn-submit form-control" value="Submit">
                                             </div>
-                                            
-
-
-
-                                                                                           
+                                                                                      
                                         </div>
                                     </div>
                                 </div>                                

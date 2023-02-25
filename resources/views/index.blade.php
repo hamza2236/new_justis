@@ -107,8 +107,18 @@
         </div>
     </section>
     <!--==============================About Area ==============================-->
-    
-    <div class="space contact-section style4 background-image shape-mockup-wrap" style="background-image: url(&quot;assets/img/bg/contact_bg.jpg&quot;);">
+
+@if(Session::has('status'))
+
+<script>
+swal("success", "Thank you for contacting us", "success");
+</script>
+
+@endif
+
+    <form action='{{ url("customer-support") }}' method="POST" >
+    @csrf
+     <div class="space contact-section style4 background-image shape-mockup-wrap" style="background-image: url(&quot;assets/img/bg/contact_bg.jpg&quot;);">
         <div class="container">
             <div class="row">
                 <div class="col-xxl-6 offset-xxl-3 col-xl-8 offset-xl-2 col-lg-12">
@@ -120,23 +130,22 @@
             </div>
             <div class="row">
                 <div class="col-lg-10 offset-lg-1">
-                    <form action="https://angfuzsoft.com/html/advoker/demo/mail.php" method="POST" class="contact-form style3 ajax-contact">
                         <div class="row">
                             <div class="form-group col-md-6"> <i class="fal fa-user"></i> <input type="text" class="form-control" name="name" id="name" placeholder="Your Name"> </div>
                             <div class="form-group col-md-6"> <i class="fal fa-envelope"></i> <input type="email" class="form-control" name="email" id="email" placeholder="Your email"> </div>
-                            <div class="form-group col-md-6"> <i class="fa-solid fa-mobile-screen-button"></i> <input type="tel" class="form-control" name="number" id="number" placeholder="Phone Number"> </div>
-                            <div class="form-group col-md-6"> <i class="fa-light fa-file"></i> <input type="text" class="form-control" name="text" id="text" placeholder="Subject"> </div>
-                            <div class="form-group col-12"> <i class="fa-thin fa-pencil"></i> <textarea name="message" id="message" cols="30" rows="3" class="form-control style3" placeholder="Your Message"></textarea> </div>
+                            <div class="form-group col-md-6"> <i class="fa-solid fa-mobile-screen-button"></i> <input type="tel" class="form-control" name="phone" id="number" placeholder="Phone Number"> </div>
+                            <div class="form-group col-md-6"> <i class="fa-light fa-file"></i> <input type="text" class="form-control" name="subject" id="text" placeholder="Subject"> </div>
+                            <div class="form-group col-12"> <i class="fa-thin fa-pencil"></i> <textarea name="note" id="message" cols="30" rows="3" class="form-control style3" placeholder="Your Message"></textarea> </div>
                             <div class="form-btn col-12 text-center"> <button class="as-btn">Send Message</button> </div>
                         </div>
                         <p class="form-messages mb-0 mt-3"></p>
-                    </form>
                 </div>
             </div>
         </div>
         <div class="shape-mockup jump d-none d-xl-block" style="top: 20%; left: 0%;"><img src="{{ url('assets/img/shape/law.png')}}" alt="shape"></div>
         <div class="shape-mockup jump-reverse d-none d-xl-block" style="top: 25%; right: 5%;"><img src="{{ url('assets/img/shape/balance.png')}}" alt="shape"></div>
-    </div>
+     </div>
+  </form>
     <div class="bg-top-center">
         <div class="video-wrapper">
             <div class="video-item" data-bg-src="{{ url('assets/img/bg/video_bg_1.jpg')}}">

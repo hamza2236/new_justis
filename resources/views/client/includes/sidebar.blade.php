@@ -7,14 +7,28 @@
                         <li>
                             <a href="{{ url('client-dashboard') }}"><i class="mdi mdi-monitor"></i><span>Dashboards</span></a>
                         </li>
-
                         <li>
+                            <a href="{{ url('find-professional-client') }}"><i class="mdi mdi-lock"></i><span>Find Professional</span></a>
+                        </li>
+                        <li>
+                            <a href="{{ url('app-chat-client') }}"><i class="mdi mdi-message-text-outline"></i><span>Chat</span>
+                        </li>
+                        <li>
+                            <a href="{{ url('page-profile-client') }}"><i class="mdi mdi-book-open-page-variant"></i><span>Profile Setting</span></a>
+                        </li>
+                        <li>
+                            <a href="{{ url('change-password-client') }}"><i class="mdi mdi-lock"></i><span>Change Password</span></a>
+                        </li>
+                        
+                        
+
+                        <!-- <li>
                             <a href="javascript: void(0);"><i class="mdi mdi-apps"></i><span>App</span><span class="menu-arrow"><i class="mdi mdi-chevron-right"></i></span></a>
                             <ul class="nav-second-level" aria-expanded="false">
                                 <li><a href="{{ url('app-chat-client') }}"><span>Chat</span></a></li>
                                 <li><a href="{{ url('app-calendar-client') }}"><span>Calendar</span></a></li> 
 
-                                <!-- <li>
+                                <li>
                                     <a href="javascript: void(0);">ECommerce <span class="menu-arrow left-has-menu"><i class="mdi mdi-chevron-right"></i></span></a>
                                     <ul class="nav-second-level" aria-expanded="false">
                                         <li><a href="app-ecommerce-product.html">Product</a></li>
@@ -23,7 +37,7 @@
                                         <li><a href="app-ecommerce-cart.html">Cart</a></li>
                                         <li><a href="app-ecommerce-checkout.html">Checkout</a></li>
                                     </ul>
-                                </li>                                 -->
+                                </li>                                
                                 <li><a href="{{ url('app-contact-list-client') }}"><span>Contact List</span></a></li>
                             </ul>
                         </li>
@@ -102,7 +116,7 @@
                             <ul class="nav-second-level" aria-expanded="false">
                                 <li><a href="{{ url('email-templates-alert-client')  }}">Alert Email</a></li>
                             </ul>
-                        </li>
+                        </li> -->
 
                     </ul>
                 </div>

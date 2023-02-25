@@ -8,6 +8,8 @@
          <!-- App favicon -->
          <link rel="shortcut icon" href="{{ url('assets/img/logo.png')}}">
 
+
+         
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta content="A premium admin dashboard template by themesbrand" name="description" />
         <meta content="Mannatthemes" name="author" />
@@ -49,19 +51,16 @@
                             <div class="col-12">
                                 <div class="card">
                                     <div class="card-body">
-        
-                                        <h4 class="mt-0 header-title">Create Coupan</h4>
+                                        <h4 class="mt-0 header-title">Create Refferal</h4>
                                         <p class="text-muted mb-4 font-13">
                                             Welcome to JUSTISCALL
                                         </p>
-        
                                         <table id="datatable-buttons" class="table table-striped table-bordered dt-responsive nowrap" style="border-collapse: collapse; border-spacing: 0; width: 100%;">
                                             <thead>
                                             <tr>
-                                                <th>Promo Code</th>
-                                                <th>Discount</th>
-                                                <th>Expiration</th>
-                                                <th>Discount Type</th>
+                                                <th>NAME</th>
+                                                <th>NO OF REFFERAL</th>
+                                                <th>SUBSCRIBED PLAN</th>
                                                 <th>ACTION</th>
                                             </tr>
                                             </thead>

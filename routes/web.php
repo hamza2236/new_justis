@@ -25,6 +25,8 @@ Route::get('contact', [aboutController::class,'contact']);
 Route::get('faq', [aboutController::class,'faq']);
 Route::get('privacy', [aboutController::class,'privacy']);
 Route::get('terms-and-conditions', [aboutController::class,'termsConditions']);
+Route::post('customer-support', [aboutController::class,'customerSupport']);
+
 
 
 
@@ -101,6 +103,30 @@ Route::get("create-coupan", function(){
 });
 Route::get("create-new-coupan", function(){
    return view("admin.create-new-coupan");
+});
+Route::get("create-refferal", function(){
+   return view("admin.create-refferal");
+});
+Route::get("create-new-refferal", function(){
+   return view("admin.create-new-refferal");
+});
+Route::get("lawyer-category", function(){
+   return view("admin.lawyer-category");
+});
+Route::get("view-profile", function(){
+   return view("admin.view-profile");
+});
+Route::get("categories-list", function(){
+   return view("admin.categories-list");
+});
+Route::get("add-categories", function(){
+   return view("admin.add-categories");
+});
+Route::get("sub-categories-list", function(){
+   return view("admin.sub-categories-list");
+});
+Route::get("add-sub-categories", function(){
+   return view("admin.add-sub-categories");
 });
 // Mubashar End
 Route::get("forms-repeater", function(){
@@ -230,7 +256,7 @@ Route::get("auth-register-client", function(){
 });
 
 
-Route::group(['middleware'=>['IsClient']],function () {
+// Route::group(['middleware'=>['IsClient']],function () {
 
 Route::get("client-dashboard", function(){
    return view("client.index");
@@ -243,9 +269,6 @@ Route::get("advanced-sweetalerts-client", function(){
 });
 Route::get("app-calendar-client", function(){
   return view("client.app-calendar");
-});
-Route::get("app-chat-client", function(){
-  return view("client.app-chat");
 });
 Route::get("app-contact-list-client", function(){
   return view("client.app-contact-list");
@@ -281,16 +304,29 @@ Route::get("page-invoice-client", function(){
 Route::get("page-pricing-client", function(){
   return view("client.page-pricing");
 });
+// Mubashar Start
+Route::get("app-chat-client", function(){
+  return view("client.app-chat");
+});
 Route::get("page-profile-client", function(){
   return view("client.page-profile");
 });
+Route::get("change-password-client", function(){
+  return view("client.change-password-client");
+});
+Route::get("find-professional-client", function(){
+  return view("client.find-professional-client");
+});
+
+// Mubashar End
+
 Route::get("tables-datatable-client", function(){
   return view("client.tables-datatable");
 });
 Route::get("ui-other-clipboard-client", function(){
   return view("client.ui-other-clipboard");
 });
-});
+// });
 // client route end//
 // client route end//
 // client route end//
