@@ -40,48 +40,14 @@ Route::post('customer-support', [aboutController::class,'customerSupport']);
 Route::get("auth-login", function(){
   return view("admin.auth-login");
 });
-Route::get("auth-register", function(){
-  return view("admin.auth-register");
-});
 
-///Route::group(['middleware'=>['IsAdmin']],function () {
+Route::group(['middleware'=>['IsAdmin']],function () {
 
 
   Route::get("admin-dashboard", function(){
     return view("admin.index");
  });
 
- Route::get("advanced-ratings", function(){
-    return view("admin.advanced-ratings");
- });
- Route::get("advanced-sweetalerts", function(){
-   return view("admin.advanced-sweetalerts");
-});
-Route::get("app-calendar", function(){
-   return view("admin.app-calendar");
-});
-Route::get("app-chat", function(){
-   return view("admin.app-chat");
-});
-Route::get("app-contact-list", function(){
-   return view("admin.app-contact-list");
-});
-
-Route::get("auth-recoverpw", function(){
-   return view("admin.auth-recoverpw");
-});
-Route::get("charts-apex", function(){
-   return view("admin.charts-apex");
-});
-Route::get("email-templates-alert", function(){
-   return view("admin.email-templates-alert");
-});
-Route::get("forms-advanced", function(){
-   return view("admin.forms-advanced");
-});
-Route::get("forms-editors", function(){
-   return view("admin.forms-editors");
-});
 // Mubashar Start
 Route::get("add-subscription", function(){
    return view("admin.add-subscription");
@@ -129,32 +95,8 @@ Route::get("add-sub-categories", function(){
    return view("admin.add-sub-categories");
 });
 // Mubashar End
-Route::get("forms-repeater", function(){
-   return view("admin.forms-repeater");
-});
-Route::get("forms-uploads", function(){
-   return view("admin.forms-uploads");
-});
-Route::get("forms-wizard", function(){
-   return view("admin.forms-wizard");
-});
-Route::get("page-invoice", function(){
-   return view("admin.page-invoice");
-});
-Route::get("page-pricing", function(){
-   return view("admin.page-pricing");
-});
-Route::get("page-profile", function(){
-   return view("admin.page-profile");
-});
-Route::get("tables-datatable", function(){
-   return view("admin.tables-datatable");
-});
-Route::get("ui-other-clipboard", function(){
-   return view("admin.ui-other-clipboard");
-});
 
-////});
+});
 // admin route end//
 // admin route end//
 // admin route end//

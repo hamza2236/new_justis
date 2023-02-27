@@ -4,14 +4,16 @@
 <html lang="en">
     <head>
         <meta charset="utf-8" />
-        <title>Frogetor - Responsive Bootstrap 4 Admin Dashboard</title>
+        <title>justiscall - Admin</title>
+         <!-- App favicon -->
+         <link rel="shortcut icon" href="{{ url('assets/img/logo.png')}}">
+
+         
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta content="A premium admin dashboard template by themesbrand" name="description" />
         <meta content="Mannatthemes" name="author" />
 
-        <!-- App favicon -->
-        <link rel="shortcut icon" href="admin/assets/images/favicon.ico">
-
+        
         <!-- DataTables -->
         <link href="admin/assets/plugins/datatables/dataTables.bootstrap4.min.css" rel="stylesheet" type="text/css" />
         <link href="admin/assets/plugins/datatables/buttons.bootstrap4.min.css" rel="stylesheet" type="text/css" />

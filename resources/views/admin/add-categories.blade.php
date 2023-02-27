@@ -4,34 +4,34 @@
 <html lang="en">
     <head>
         <meta charset="utf-8" />
-        <title>Justice Call</title>
+        <title>justiscall - Admin</title>
+         <!-- App favicon -->
+         <link rel="shortcut icon" href="{{ url('assets/img/logo.png')}}">
+
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <meta content="A premium admin dashboard template by themesbrand" name="description" />
+        <meta content="" name="description" />
         <meta content="Mannatthemes" name="author" />
 
-        <!-- App favicon -->
-        <link rel="shortcut icon" href="admin/assets/images/favicon.ico">
-
         <!-- Clock css -->
-        <link href="admin/assets/plugins/daterangepicker/daterangepicker.css" rel="stylesheet" />
+        <link href="{{ url('admin/assets/plugins/daterangepicker/daterangepicker.css')}}" rel="stylesheet" />
         <!-- Plugins css -->
-        <link href="admin/assets/plugins/timepicker/tempusdominus-bootstrap-4.css" rel="stylesheet" />
-        <link href="admin/assets/plugins/timepicker/bootstrap-material-datetimepicker.css" rel="stylesheet">
-        <link href="admin/assets/plugins/clockpicker/jquery-clockpicker.min.css" rel="stylesheet" />
-        <link href="admin/assets/plugins/colorpicker/asColorPicker.min.css" rel="stylesheet" type="text/css" />
-        <link href="admin/assets/plugins/select2/select2.min.css" rel="stylesheet" type="text/css" />
+        <link href="{{ url('admin/assets/plugins/timepicker/tempusdominus-bootstrap-4.css')}}" rel="stylesheet" />
+        <link href="{{ url('admin/assets/plugins/timepicker/bootstrap-material-datetimepicker.css')}}" rel="stylesheet">
+        <link href="{{ url('admin/assets/plugins/clockpicker/jquery-clockpicker.min.css')}}" rel="stylesheet" />
+        <link href="{{ url('admin/assets/plugins/colorpicker/asColorPicker.min.css')}}" rel="stylesheet" type="text/css" />
+        <link href="{{ url('admin/assets/plugins/select2/select2.min.css')}}" rel="stylesheet" type="text/css" />
 
-        <link href="admin/assets/plugins/bootstrap-colorpicker/css/bootstrap-colorpicker.min.css" rel="stylesheet">
-        <link href="admin/assets/plugins/bootstrap-datepicker/css/bootstrap-datepicker.min.css" rel="stylesheet">
-        <link href="admin/assets/plugins/bootstrap-touchspin/css/jquery.bootstrap-touchspin.min.css" rel="stylesheet" /> 
+        <link href="{{ url('admin/assets/plugins/bootstrap-colorpicker/css/bootstrap-colorpicker.min.css')}}" rel="stylesheet">
+        <link href="{{ url('admin/assets/plugins/bootstrap-datepicker/css/bootstrap-datepicker.min.css')}}" rel="stylesheet">
+        <link href="{{ url('admin/assets/plugins/bootstrap-touchspin/css/jquery.bootstrap-touchspin.min.css')}}" rel="stylesheet" /> 
 
         
 
         <!-- App css -->
-        <link href="admin/assets/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
-        <link href="admin/assets/css/icons.css" rel="stylesheet" type="text/css" />
-        <link href="admin/assets/css/metismenu.min.css" rel="stylesheet" type="text/css" />
-        <link href="admin/assets/css/style.css" rel="stylesheet" type="text/css" />
+        <link href="{{ url('admin/assets/css/bootstrap.min.css')}}" rel="stylesheet" type="text/css" />
+        <link href="{{ url('admin/assets/css/icons.css')}}" rel="stylesheet" type="text/css" />
+        <link href="{{ url('admin/assets/css/metismenu.min.css')}}" rel="stylesheet" type="text/css" />
+        <link href="{{ url('admin/assets/css/style.css')}}" rel="stylesheet" type="text/css" />
         <style id="clock-animations"></style>
 
     </head>
