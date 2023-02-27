@@ -74,7 +74,7 @@
                                 <li><a href="{{ url('admin-licence') }}"><span>Manage Licence</span></a></li>
                             </ul>
                         </li>
-<!-- 
+ <!--
                         <li>
                             <a href="javascript: void(0);"><i class="mdi mdi-apps"></i><span>App</span><span class="menu-arrow"><i class="mdi mdi-chevron-right"></i></span></a>
                             <ul class="nav-second-level" aria-expanded="false">

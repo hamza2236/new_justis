@@ -258,9 +258,7 @@ Route::get("auth-register-client", function(){
 
 // Route::group(['middleware'=>['IsClient']],function () {
 
-Route::get("client-dashboard", function(){
-   return view("client.index");
-});
+
 Route::get("advanced-ratings-client", function(){
    return view("client.advanced-ratings");
 });
@@ -305,6 +303,9 @@ Route::get("page-pricing-client", function(){
   return view("client.page-pricing");
 });
 // Mubashar Start
+Route::get("client-dashboard", function(){
+   return view("client.index");
+});
 Route::get("app-chat-client", function(){
   return view("client.app-chat");
 });
@@ -316,6 +317,15 @@ Route::get("change-password-client", function(){
 });
 Route::get("find-professional-client", function(){
   return view("client.find-professional-client");
+});
+Route::get("search-professional-client", function(){
+  return view("client.search-professional-client");
+});
+Route::get("profile-professional-client", function(){
+  return view("client.profile-professional-client");
+});
+Route::get("professional-checkout-client", function(){
+  return view("client.professional-checkout-client");
 });
 
 // Mubashar End
