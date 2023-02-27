@@ -4,6 +4,7 @@ use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\homeControllerME;
 use App\Http\Controllers\HomeController;
 use App\Http\Controllers\aboutController;
+use App\Http\Controllers\TwilioSMSController;
 use App\Models\Country;
 use App\Models\Pro_Category;
 use App\Models\Pro_Sub_Category;
@@ -220,7 +221,8 @@ Route::get("client/login", function(){
 });
 Route::get("client/register", function(){
   $countries=Country::all();  
-  sendSMS("+923039714636","0234");
+  // TwilioSMSController::
+  // sendSMS("+923039714636","0234");
   return view("client.auth-register",['countries'=>$countries]);
 });
 
@@ -299,7 +301,7 @@ Route::get("ui-other-clipboard-client", function(){
 // client route end//
 // client route end//
 // client route end//
-Route::get('sendSMS', [TwilioSMSController::class, 'index']);
+// Route::get('sendSMS', [TwilioSMSController::class, 'sendSMS']);
 
 Auth::routes();
 
