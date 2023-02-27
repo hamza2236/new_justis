@@ -1,25 +1,16 @@
 @extends('client.layouts.main')
-@section('main-container-client')
-<!DOCTYPE html>
-<html>
-    <head>
-        <meta charset="utf-8" />
-        <title>Justis Call</title>
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <meta content="A premium admin dashboard template by mannatthemes" name="description" />
-        <meta content="Mannatthemes" name="author" />
+@section('header_style')
+    <meta charset="utf-8" />
+    <title>Justis Call</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta content="A premium admin dashboard template by mannatthemes" name="description" />
+    <meta content="Mannatthemes" name="author" />
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.3/css/intlTelInput.min.css" rel="stylesheet"/>
+@endsection
 
-        <!-- App favicon -->
-        <link rel="shortcut icon" href="admin/assets/images/favicon.ico">
 
-        <!-- App css -->
-        <link href="admin/assets/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
-        <link href="admin/assets/css/icons.css" rel="stylesheet" type="text/css" />
-        <link href="admin/assets/css/metismenu.min.css" rel="stylesheet" type="text/css" />
-        <link href="admin/assets/css/style.css" rel="stylesheet" type="text/css" />
-    </head>
-    <body style="background: #fff;">
-        <div class="container-fluid">
+@section('main_content')
+<div class="container-fluid">
             <div class="row">
                 <div class="col-lg-6 col-sm-12">
                     <div class="card mb-0 shadow-none">
@@ -33,7 +24,7 @@
                                     </div>
                                 </div>                            
                                 
-                                <form class="form-horizontal my-4" action="index.html">
+                                <form class="form-horizontal my-4" method="POST" action="{{ route('register') }}" enctype="multipart/form-data">>
                                     <div class="row">
                                         <div class="form-group col-sm-6 col-xs-12">
                                             <label for="fName">First Name</label>
@@ -41,7 +32,7 @@
                                                 <div class="input-group-prepend">
                                                     <span class="input-group-text" id="basic-addon1"><i class="mdi mdi-account-outline font-16"></i></span>
                                                 </div>
-                                                <input type="text" class="form-control" id="fName" placeholder="Enter First Name" name="fName">
+                                                <input type="text" class="form-control" id="fName" placeholder="Enter First Name" name="first_name" maxlength="255" required>
                                             </div>                                    
                                         </div>
 
@@ -51,7 +42,7 @@
                                                 <div class="input-group-prepend">
                                                     <span class="input-group-text" id="basic-addon1"><i class="mdi mdi-account-outline font-16"></i></span>
                                                 </div>
-                                                <input type="text" class="form-control" id="lName" placeholder="Enter Last Name" name="lName">
+                                                <input type="text" class="form-control" id="lName" placeholder="Enter Last Name"  name="last_name" maxlength="255" required>
                                             </div>                                    
                                         </div>
                                     
@@ -61,21 +52,16 @@
                                                 <div class="input-group-prepend">
                                                     <span class="input-group-text" id="basic-addon2"><i class="mdi mdi-email-outline font-16"></i></span>
                                                 </div>
-                                                <input type="email" class="form-control" id="eMial" name="eMial" placeholder="Email Address">
+                                                <input type="email" class="form-control" id="eMial" name="email" placeholder="Email Address" maxlength="255" required>
                                             </div>                                    
                                         </div>
         
                                         <div class="form-group col-sm-6 col-xs-12">
-                                            <label for="phNum">Phone Number</label>
+                                            <label for="phone_number">Phone Number</label>
                                             <div class="input-group mb-3">
-                                                <div class="input-group-prepend">
-                                                    <span class="input-group-text" id="basic-addon3"><i class="mdi mdi-lock-outline font-16"></i></span>
-                                                </div>
-                                                <input type="number" class="form-control" id="phNum" placeholder="Enter Phone Number" name="phNum">
+                                                <input type="text" class="form-control" id="phone_number" placeholder="Enter Phone Number" name="phone_number">
                                             </div>                                
                                         </div>
-
-                                        
 
                                         <div class="form-group col-sm-6 col-xs-12">
                                             <label for="category">Gender</label>
@@ -83,10 +69,10 @@
                                                 <div class="input-group-prepend">
                                                     <span class="input-group-text" id="basic-addon3"><i class="mdi mdi-gender-male-female font-16"></i></span>
                                                 </div>
-                                                <select class="form-control">
+                                                <select class="form-control" name="gender" required>
                                                     <option selected disabled>Choose Gender</option>
-                                                    <option value="1">Male</option>
-                                                    <option value="2">Female</option>
+                                                    <option value="Male">Male</option>
+                                                    <option value="Female">Female</option>
                                                 </select>
                                             </div>                                
                                         </div>
@@ -97,15 +83,17 @@
                                                 <div class="input-group-prepend">
                                                     <span class="input-group-text" id="basic-addon3"><i class="mdi mdi-city font-16"></i></span>
                                                 </div>
-                                                <select class="form-control">
-                                                    <option selected disabled>Choose Country</option>
-                                                    
+                                                <select class="form-control"  name="country" required>
+                                                    <option selected disabled >Choose Country</option>
+                                                    @foreach($countries as $country)
+                                                    <option value="{{$country->name}}">{{$country->name}}</option>
+                                                    @endforeach
                                                 </select>
                                             </div>                                
                                         </div>
 
                                         <div class="col-sm-12 col-xs-12">
-                                            <input type="checkbox" name="">
+                                            <input type="checkbox" name="" required>
                                             <label> Accept Terms & Conditions</label>
                                         </div>
                                         
@@ -115,6 +103,8 @@
                                     <div class="form-group mb-0 row">
                                         <div class="col-3 mt-2"></div>
                                         <div class="col-6 mt-2">
+                                            @csrf
+                                            <input type="hidden" value="client" name="user_type">
                                             <button class="btn btn-primary btn-block waves-effect waves-light" type="submit">Send OTP<i class="fas fa-sign-in-alt ml-1"></i></button>
                                         </div>
                                     </div>                            
@@ -144,15 +134,19 @@
                 </div>
             </div>
         </div>
-        <!-- jQuery  -->
-        <script src="admin/assets/js/jquery.min.js"></script>
-        <script src="admin/assets/js/bootstrap.bundle.min.js"></script>
-        <script src="admin/assets/js/metisMenu.min.js"></script>
-        <script src="admin/assets/js/waves.min.js"></script>
-        <script src="admin/assets/js/jquery.slimscroll.min.js"></script>
+@endsection
 
-        <!-- App js -->
-        <script src="admin/assets/js/app.js"></script>
-    </body>
-</html>
+
+@section('script_code')
+<script src="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.3/js/intlTelInput.min.js"></script>
+<script>
+var phone_number = window.intlTelInput(document.querySelector("#phone_number"), {
+  separateDialCode: true,
+  preferredCountries:["FR"],
+  hiddenInput: "mobile",
+  
+  utilsScript: "//cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.3/js/utils.js"
+});
+
+</script>
 @endsection

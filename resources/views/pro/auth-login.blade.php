@@ -1,30 +1,14 @@
 @extends('pro.layouts.main')
-@section('main-container-admin-pro')
+@section('header_style')
+    <title>Justis Call  Pro login</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta content="A premium admin dashboard template by mannatthemes" name="description" />
+    <meta content="Mannatthemes" name="author" />
+@endsection
 
-<!DOCTYPE html>
-<html lang="en">
-    <head>
-        <meta charset="utf-8" />
-        <title>Justiscall - Pro login</title>
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <meta content="" name="description" />
-        <meta content="" name="author" />
-
-        <!-- App favicon -->
-        <link rel="shortcut icon" href="{{ url('assets/img/logo.png')}}">
-
-        <!-- App css -->
-        <link href="{{ url('admin/assets/css/bootstrap.min.css')}}" rel="stylesheet" type="text/css" />
-        <link href="{{ url('admin/assets/css/icons.css')}}" rel="stylesheet" type="text/css" />
-        <link href="{{ url('admin/assets/css/metismenu.min.css')}}" rel="stylesheet" type="text/css" />
-        <link href="{{ url('admin/assets/css/style.css')}}" rel="stylesheet" type="text/css" />
-
-    </head>
-
-    <body class="account-body">
-
-        <!-- Log In page -->
-        <div class="row vh-100">
+@section('main_content')
+<!-- Log In page -->
+<div class="row vh-100">
             <div class="col-lg-6  pr-0">
                 <div class="card mb-0 shadow-none">
                     <div class="card-body">
@@ -88,18 +72,8 @@
             </div>
         </div>
         <!-- End Log In page -->
+@endsection
 
 
-        <!-- jQuery  -->
-        <script src="{{ url('admin/assets/js/jquery.min.js')}}"></script>
-        <script src="{{ url('admin/assets/js/bootstrap.bundle.min.js')}}"></script>
-        <script src="{{ url('admin/assets/js/metisMenu.min.js')}}"></script>
-        <script src="{{ url('admin/assets/js/waves.min.js')}}"></script>
-        <script src="{{ url('admin/assets/js/jquery.slimscroll.min.js')}}"></script>
-
-        <!-- App js -->
-        <script src="{{ url('admin/assets/js/app.js')}}"></script>
-
-    </body>
-</html>
+@section('script_code')
 @endsection

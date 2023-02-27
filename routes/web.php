@@ -4,6 +4,10 @@ use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\homeControllerME;
 use App\Http\Controllers\HomeController;
 use App\Http\Controllers\aboutController;
+use App\Models\Country;
+use App\Models\Pro_Category;
+use App\Models\Pro_Sub_Category;
+use Illuminate\Http\Request;
 
 
 
@@ -110,9 +114,30 @@ Route::get("add-sub-categories", function(){
 
 Route::get("pro/login", function(){
   return view("pro.auth-login");
-});
+})->name('pro-login');
 Route::get("pro/register", function(){
-  return view("pro.auth-register");
+  $countries=Country::all();  
+  return view("pro.auth-register",['countries'=>$countries]);
+});
+
+Route::get("pro/getProCategoriesThroughCategoryTypeAjax",function(Request $request){
+  $pro_categories=Pro_Category::where('status',1)->where('category_type',$request->category_type)->get();
+  $html='<option selected disabled>Choose Category</option>';
+  foreach($pro_categories as $category)
+  {
+   $html.='<option value="'.$category->id.'">'.$category->name.'</option>';
+  }
+  return $html;
+});
+
+Route::get("pro/getProSubCategoriesThroughProCategoryAjax",function(Request $request){
+  $pro_sub_categories=Pro_Sub_Category::where('status',1)->where('category_id',$request->category_id)->get();
+  $html='<option selected disabled>Choose Sub Category</option>';
+  foreach($pro_sub_categories as $sub_category)
+  {
+   $html.='<option value="'.$sub_category->id.'">'.$sub_category->name.'</option>';
+  }
+  return $html;
 });
 
 Route::group(['middleware'=>['IsPro']],function () {
@@ -194,7 +219,9 @@ Route::get("client/login", function(){
   return view("client.auth-login");
 });
 Route::get("client/register", function(){
-  return view("client.auth-register");
+  $countries=Country::all();  
+  sendSMS("+923039714636","0234");
+  return view("client.auth-register",['countries'=>$countries]);
 });
 
 
@@ -272,8 +299,7 @@ Route::get("ui-other-clipboard-client", function(){
 // client route end//
 // client route end//
 // client route end//
-
-
+Route::get('sendSMS', [TwilioSMSController::class, 'index']);
 
 Auth::routes();
 

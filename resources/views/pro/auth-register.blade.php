@@ -96,7 +96,7 @@
                                                 <!-- <div class="input-group-prepend">
                                                     <span class="input-group-text" id="basic-addon3"><i class="mdi mdi-lock-outline font-16"></i></span>
                                                 </div> -->
-                                                <input type="textf" class="form-control" id="phone_number" placeholder="Enter Phone Number" name="phone_number" maxlength="50" required>
+                                                <input type="textf" class="form-control" id="phone_number" placeholder="Enter Phone Number" name="" maxlength="50" required>
                                             </div>                                
                                         </div>
 
@@ -106,10 +106,10 @@
                                                 <div class="input-group-prepend">
                                                     <span class="input-group-text" id="basic-addon3"><i class="mdi mdi-folder-multiple font-16"></i></span>
                                                 </div>
-                                                <select class="form-control" required name="categories_type">
+                                                <select class="form-control" required name="categories_type" id="category-type">
                                                     <option selected disabled>Choose Category Type</option>
-                                                    <option value="personal">Personal</option>
-                                                    <option value="firm">Firm</option>
+                                                    <option value="Personal">Personal</option>
+                                                    <option value="Firm">Firm</option>
                                                 </select>
                                             </div>                                
                                         </div>
@@ -135,8 +135,8 @@
                                                 </div>
                                                 <select class="form-control" name="gender" required>
                                                     <option selected disabled>Choose Gender</option>
-                                                    <option value="male">Male</option>
-                                                    <option value="female">Female</option>
+                                                    <option value="Male">Male</option>
+                                                    <option value="Female">Female</option>
                                                 </select>
                                             </div>                                
                                         </div>
@@ -184,7 +184,7 @@
                                                 </div>
                                                 <select class="form-control" name="country" required>
                                                     <option selected disabled>Choose Country</option>
-                                                    @foreach($coutries as $country)
+                                                    @foreach($countries as $country)
                                                     <option value="{{$country->name}}">{{$country->name}}</option>
                                                     @endforeach
                                                 </select>
@@ -209,11 +209,8 @@
                                                     <span class="input-group-text" id="basic-addon3"><i class="mdi mdi-folder-multiple font-16"></i></span>
                                                 </div>
 
-                                                <select class="form-control" required name="category_id">
-                                                    <option selected disabled>Choose Category Type</option>
-                                                    @foreach($pro_categories as $pro_category)
-                                                    <option value="{{$pro_category->id}}">{{$pro_category->name}}</option>
-                                                    @endforeach
+                                                <select class="form-control" required name="category_id" id="category-id">
+                                                    <option selected disabled>Choose Category</option>
                                                 </select>
 
 
@@ -226,17 +223,14 @@
                                                 <div class="input-group-prepend">
                                                     <span class="input-group-text" id="basic-addon3"><i class="mdi mdi-folder-multiple font-16"></i></span>
                                                 </div>
-                                                <select class="form-control" name="sub_category_id" required>
+                                                <select class="form-control" name="sub_category_id" required id="sub-category-id" multiple>
                                                     <option selected disabled>Choose Sub Category</option>
-                                                    <option value="1">Family, personal and property law</option>
-                                                    <option value="2">Commercial, business and competition law</option>
-                                                    <option value="3">Social security and social protection law</option>
                                                 </select>
                                             </div>                                
                                         </div>
                                         <div class="form-group col-sm-6 col-xs-12"></div>
                                         <div class="form-group col-sm-6 col-xs-12">
-                                            <input type="checkbox" name="all" id="all">
+                                            <input type="checkbox" name="select_all_subcategory" id="all">
                                             <label class="mx-3" for="all"> Select all</label>
                                         </div>
 
@@ -436,7 +430,8 @@
 
 
 @section('script_code')
-<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDvhmI6LY1QamKQmFQjVmvV2TwPRezt5IQ&libraries=places"></script>
+<!-- AIzaSyDvhmI6LY1QamKQmFQjVmvV2TwPRezt5IQ&libraries=places -->
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyARfbA3PAh_LMFWodbQPchK8JCgALcRvwc"></script>
 <script>
     var map;
     var service;
@@ -539,4 +534,44 @@
 
 </script>
 
+<script>
+    // get pro categories
+    $("#category-type").change(function(){
+        var category_type = $(this).find(":selected").val();
+        $.ajax({
+            type:'get',
+            url:'{!!URL::to('pro/getProCategoriesThroughCategoryTypeAjax')!!}',
+            data:{'category_type':category_type},
+            success:function(data)
+            {
+            $("#category-id").html('');
+            $("#category-id").append(data);
+            },
+            error:function()
+            {
+            alert('error');
+            }
+        });
+     });
+
+    // get pro categories
+    $("#category-id").change(function(){
+        var category_id = $(this).find(":selected").val();
+        $.ajax({
+            type:'get',
+            url:'{!!URL::to('pro/getProSubCategoriesThroughProCategoryAjax')!!}',
+            data:{'category_id':category_id},
+            success:function(data)
+            {
+            $("#sub-category-id").html('');
+            $("#sub-category-id").append(data);
+            },
+            error:function()
+            {
+            alert('error');
+            }
+        });
+     });      
+            
+</script>
 @endsection
