@@ -41,6 +41,8 @@
     <link rel="stylesheet" href="{{ asset('assets/css/style.css')}}">
     <!-- App favicon -->
     <link rel="shortcut icon" href="{{ url('assets/img/logo.png')}}">
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+
 
 </head>
 
@@ -287,7 +289,6 @@
     <script src="{{ asset('assets/js/isotope.pkgd.min.js')}}"></script> <!-- Flip Slider -->
     <script src="{{ asset('assets/js/jquery.flipster.min.js')}}"></script> <!-- Main Js File -->
     <script src="{{ asset('assets/js/main.js')}}"></script>
-
 
 </body>
 

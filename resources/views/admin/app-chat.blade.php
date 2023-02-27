@@ -4,13 +4,13 @@
 <html lang="en">
     <head>
         <meta charset="utf-8" />
-        <title>Frogetor - Responsive Bootstrap 4 Admin Dashboard</title>
+        <title>justiscall - Admin</title>
+         <!-- App favicon -->
+         <link rel="shortcut icon" href="{{ url('assets/img/logo.png')}}">
+
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta content="A premium admin dashboard template by mannatthemes" name="description" />
         <meta content="Mannatthemes" name="author" />
-
-        <!-- App favicon -->
-        <link rel="shortcut icon" href="admin/assets/images/favicon.ico">
 
         <!-- App css -->
         <link href="admin/assets/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
@@ -38,19 +38,20 @@
                 <div class="page-content">
                     <div class="container-fluid">
                         <div class="row">
+                            <div class="col-lg-12">
+                                <div class="card">
+                                    <div class="card-body bootstrap-select-1">
+                                        <h4 class="header-title mt-0">Chat</h4>
+                                        <p class="text-muted mb-4 font-13">
+                                            Welcome to JUSTISCALL 
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
                             <div class="col-12">
                                 <div class="chat-box-left">
-                                    <ul class="nav nav-pills mb-3 nav-justified" id="pills-tab" role="tablist">
-                                        <li class="nav-item">
-                                            <a class="nav-link active" id="general_chat_tab" data-toggle="pill" href="#general_chat" aria-selected="true">General</a>
-                                        </li>
-                                        <li class="nav-item">
-                                            <a class="nav-link" id="group_chat_tab" data-toggle="pill" href="#group_chat" aria-selected="false">Groups</a>
-                                        </li>
-                                        <li class="nav-item">
-                                            <a class="nav-link" id="personal_chat_tab" data-toggle="pill" href="#personal_chat" aria-selected="false">Personal</a>
-                                        </li>
-                                    </ul>
                                     <div class="chat-search">
                                         <div class="form-group"> 
                                             <div class="input-group">                                                
@@ -187,215 +188,6 @@
                                                 </div><!-- end media-body -->
                                             </a> <!--end media-->                                            
                                         </div><!--end general chat-->
-
-                                        <div class="tab-pane fade" id="group_chat">                                                
-                                            <a href="" class="media new-message">
-                                                <div class="media-left">
-                                                    <div class="avatar-box thumb-lg align-self-center mr-2">
-                                                        <span class="avatar-title bg-primary rounded-circle"><i class="fab fa-quinscape"></i></span>
-                                                    </div>
-                                                </div><!-- media-left -->
-                                                <div class="media-body">
-                                                    <div>
-                                                        <h6>Design Group</h6>
-                                                        <p>Good morning! How are you?</p>
-                                                    </div>
-                                                    <div>
-                                                        <span>20 Feb</span>
-                                                        <span>1</span>
-                                                    </div>
-                                                </div><!-- end media-body -->
-                                            </a> <!--end media-->
-                                            <a href="" class="media">
-                                                <div class="media-left">
-                                                    <div class="avatar-box thumb-lg align-self-center mr-2">
-                                                        <span class="avatar-title bg-success rounded-circle"><i class="fab fa-connectdevelop"></i></span>
-                                                    </div>
-                                                </div><!-- media-left -->
-                                                <div class="media-body">
-                                                    <div>
-                                                        <h6>Front end Developers</h6>
-                                                        <p>Have A Nice day...</p>
-                                                    </div>
-                                                    <div>
-                                                        <span>15 Feb</span>
-                                                    </div>
-                                                </div><!-- end media-body -->
-                                            </a>   <!--end media-->  
-                                            <a href="" class="media">
-                                                <div class="media-left">
-                                                    <div class="avatar-box thumb-lg align-self-center mr-2">
-                                                        <span class="avatar-title bg-warning rounded-circle"><i class="far fa-gem"></i></span>
-                                                    </div>
-                                                </div><!-- media-left -->
-                                                <div class="media-body">
-                                                    <div>
-                                                        <h6>UI/UX Designers</h6>
-                                                        <p>Congratulations everybody... </p>
-                                                    </div>
-                                                    <div>
-                                                        <span>14 Feb</span>
-                                                    </div>
-                                                </div><!-- end media-body -->
-                                            </a><!--end media--> 
-                                            <a href="" class="media">
-                                                <div class="media-left">
-                                                    <div class="avatar-box thumb-lg align-self-center mr-2">
-                                                        <span class="avatar-title bg-pink rounded-circle"><i class="fab fa-react"></i></span>
-                                                    </div>
-                                                </div><!-- media-left -->
-                                                <div class="media-body">
-                                                    <div>
-                                                        <h6>React Developers</h6>
-                                                        <p>How are you Friends...</p>
-                                                    </div>
-                                                    <div>
-                                                        <span>10 Feb</span>
-                                                    </div>
-                                                </div><!-- end media-body -->
-                                            </a><!--end media-->   
-                                            <a href="" class="media">
-                                                <div class="media-left">
-                                                    <div class="avatar-box thumb-lg align-self-center mr-2">
-                                                        <span class="avatar-title bg-info rounded-circle"><i class="fas fa-globe"></i></span>
-                                                    </div>
-                                                </div><!-- media-left -->
-                                                <div class="media-body">
-                                                    <div>
-                                                        <h6>Marketing Group</h6>
-                                                        <p>How are you Friends...</p>
-                                                    </div>
-                                                    <div>
-                                                        <span>10 Feb</span>
-                                                    </div>
-                                                </div><!-- end media-body -->
-                                            </a><!--end media-->   
-                                        </div><!--end group chat-->
-
-                                        <div class="tab-pane fade" id="personal_chat">
-                                            <a href="" class="media new-message">
-                                                <div class="media-left">
-                                                    <img src="admin/assets/images/users/user-1.jpg" alt="user" class="rounded-circle thumb-lg">
-                                                    <span class="round-10 bg-success"></span>
-                                                </div><!-- media-left -->
-                                                <div class="media-body">
-                                                    <div class="d-inline-block">
-                                                        <h6>Daniel Madsen</h6>
-                                                        <p>Good morning! Congratulations Friend...</p>
-                                                    </div>
-                                                    <div>
-                                                        <span>20 Feb</span>
-                                                        <span>3</span>
-                                                    </div>
-                                                </div><!-- end media-body -->
-                                            </a><!--end media-->     
-                                            <a href="" class="media new-message">
-                                                <div class="media-left">
-                                                    <img src="admin/assets/images/users/user-2.jpg" alt="user" class="rounded-circle thumb-lg">
-                                                    <span class="round-10 bg-success"></span>
-                                                </div><!-- media-left -->
-                                                <div class="media-body">
-                                                    <div>
-                                                        <h6>Robert Jefferson</h6>
-                                                        <p>Congratulations Friend...</p>
-                                                    </div>
-                                                    <div>
-                                                        <span>20 Feb</span>
-                                                        <span>1</span>
-                                                    </div>
-                                                </div><!-- end media-body -->
-                                            </a><!--end media--> 
-                                            <a href="" class="media">
-                                                <div class="media-left">
-                                                    <img src="admin/assets/images/users/user-3.jpg" alt="user" class="rounded-circle thumb-lg">
-                                                    <span class="round-10 bg-danger"></span>
-                                                </div><!-- media-left -->
-                                                <div class="media-body">
-                                                    <div>
-                                                        <h6>Jesse Ross</h6>
-                                                        <p>How are you Friend...</p>
-                                                    </div>
-                                                    <div>
-                                                        <span>15 Feb</span>
-                                                    </div>
-                                                </div><!-- end media-body -->
-                                            </a><!--end media-->     
-                                            <a href="" class="media">
-                                                <div class="media-left">
-                                                    <img src="admin/assets/images/users/user-4.jpg" alt="user" class="rounded-circle thumb-lg">
-                                                    <span class="round-10 bg-danger"></span>
-                                                </div><!-- media-left -->
-                                                <div class="media-body">
-                                                    <div>
-                                                        <h6>Mary Schneider</h6>
-                                                        <p>Have A Nice day...</p>
-                                                    </div>
-                                                    <div>
-                                                        <span>14 Feb</span>
-                                                    </div>
-                                                </div><!-- end media-body -->
-                                            </a><!--end media--> 
-                                            <a href="" class="media">
-                                                <div class="media-left">
-                                                    <img src="admin/assets/images/users/user-5.jpg" alt="user" class="rounded-circle thumb-lg">
-                                                    <span class="round-10 bg-success"></span>
-                                                </div><!-- media-left -->
-                                                <div class="media-body">
-                                                    <div>
-                                                        <h6>David Herrmann</h6>
-                                                        <p>Good morning! How are you?</p>
-                                                    </div>
-                                                    <div>
-                                                        <span>10 Feb</span>
-                                                    </div>
-                                                </div><!-- end media-body -->
-                                            </a><!--end media-->     
-                                            <a href="" class="media">
-                                                <div class="media-left">
-                                                    <img src="admin/assets/images/users/user-6.jpg" alt="user" class="rounded-circle thumb-lg">
-                                                    <span class="round-10 bg-danger"></span>
-                                                </div><!-- media-left -->
-                                                <div class="media-body">
-                                                    <div>
-                                                        <h6>Mary Hayes</h6>
-                                                        <p>How are you Friend...</p>
-                                                    </div>
-                                                    <div>
-                                                        <span>1 Feb</span>
-                                                    </div>
-                                                </div><!-- end media-body -->
-                                            </a><!--end media--> 
-                                            <a href="" class="media">
-                                                <div class="media-left">
-                                                    <img src="admin/assets/images/users/user-7.jpg" alt="user" class="rounded-circle thumb-lg">
-                                                    <span class="round-10 bg-danger"></span>
-                                                </div><!-- media-left -->
-                                                <div class="media-body">
-                                                    <div>
-                                                        <h6>Rita Duarte</h6>
-                                                        <p>Have A Nice day...</p>
-                                                    </div>
-                                                    <div>
-                                                        <span>30 Jan</span>
-                                                    </div>
-                                                </div><!-- end media-body -->
-                                            </a><!--end media-->     
-                                            <a href="" class="media">
-                                                <div class="media-left">
-                                                    <img src="admin/assets/images/users/user-8.jpg" alt="user" class="rounded-circle thumb-lg">
-                                                    <span class="round-10 bg-danger"></span>
-                                                </div><!-- media-left -->
-                                                <div class="media-body">
-                                                    <div>
-                                                        <h6>Dennis Wilson</h6>
-                                                        <p>Good morning! How are you?</p>
-                                                    </div>
-                                                    <div>
-                                                        <span>26 Jan</span>
-                                                    </div>
-                                                </div><!-- end media-body -->
-                                            </a><!--end media-body-->  
-                                        </div><!--end personal chat-->
                                     </div><!--end tab-content-->
                                 </div><!--end chat-box-left -->
 

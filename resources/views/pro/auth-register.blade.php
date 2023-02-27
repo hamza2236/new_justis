@@ -1,5 +1,6 @@
 @extends('pro.layouts.main')
 
+
 @section('header_style')
     <title>Justis Call</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -437,7 +438,7 @@
 @section('script_code')
 <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDvhmI6LY1QamKQmFQjVmvV2TwPRezt5IQ&libraries=places"></script>
 <script>
-     var map;
+    var map;
     var service;
     var infowindow;
 
@@ -522,6 +523,7 @@
         preview.style.display = "block";
       }
     }
+
 
 
     $(".check-time").change(function(){
