@@ -235,46 +235,8 @@
                                             <div class="col-md-6">
                                                 <h6 class="mt-lg-0 input-title">Multiple Select</h6>
 
-                                                <select class="select2 mb-3 select2-multiple" style="width: 100%" multiple="multiple" data-placeholder="Choose">
-                                                    <optgroup label="Alaskan/Hawaiian Time Zone">
-                                                        <option value="AK">Alaska</option>
-                                                        <option value="HI">Hawaii</option>
-                                                    </optgroup>
-                                                    <optgroup label="Pacific Time Zone">
-                                                        <option value="CA">California</option>
-                                                        <option value="NV">Nevada</option>
-                                                        <option value="OR">Oregon</option>
-                                                        <option value="WA">Washington</option>
-                                                    </optgroup>
-                                                    <optgroup label="Mountain Time Zone">
-                                                        <option value="AZ">Arizona</option>
-                                                        <option value="CO">Colorado</option>
-                                                        <option value="ID">Idaho</option>
-                                                        <option value="MT">Montana</option>
-                                                        <option value="NE">Nebraska</option>
-                                                        <option value="NM">New Mexico</option>
-                                                        <option value="ND">North Dakota</option>
-                                                        <option value="UT">Utah</option>
-                                                        <option value="WY">Wyoming</option>
-                                                    </optgroup>
-                                                    <optgroup label="Central Time Zone">
-                                                        <option value="AL">Alabama</option>
-                                                        <option value="AR">Arkansas</option>
-                                                        <option value="IL">Illinois</option>
-                                                        <option value="IA">Iowa</option>
-                                                        <option value="KS">Kansas</option>
-                                                        <option value="KY">Kentucky</option>
-                                                        <option value="LA">Louisiana</option>
-                                                        <option value="MN">Minnesota</option>
-                                                        <option value="MS">Mississippi</option>
-                                                        <option value="MO">Missouri</option>
-                                                        <option value="OK">Oklahoma</option>
-                                                        <option value="SD">South Dakota</option>
-                                                        <option value="TX">Texas</option>
-                                                        <option value="TN">Tennessee</option>
-                                                        <option value="WI">Wisconsin</option>
-                                                    </optgroup>
-                                                    <optgroup label="Eastern Time Zone">
+                                                <select id="selectChartType" class="select2 mb-3 select2-multiple" style="width: 100%" multiple="multiple" data-placeholder="Choose">
+                                                    
                                                         <option value="CT">Connecticut</option>
                                                         <option value="DE">Delaware</option>
                                                         <option value="FL">Florida</option>
@@ -297,6 +259,8 @@
                                                         <option value="WV">West Virginia</option>
                                                     </optgroup>
                                                 </select> 
+                                                <input type="button" id="checkAll" value="check all">
+                                                <input type="button" id="unCheckAll" value="Un-check all">
                                             </div>                                                
                                         </div>
                                     </div>
@@ -581,4 +545,23 @@
 
     </body>
 </html>
+
+
+<script>
+    $(document).ready(function() {
+
+  $("#checkAll").click(function() {
+
+    $('#selectChartType option').prop('selected', true);
+
+  });
+  $("#unCheckAll").click(function() {
+
+    $('#selectChartType option').prop('selected', false);
+
+  });
+
+});
+
+</script>
 @endsection
