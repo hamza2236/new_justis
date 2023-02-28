@@ -11,6 +11,9 @@
                             <a href="{{ url('find-professional-client') }}"><i class="mdi mdi-lock"></i><span>Find Professional</span></a>
                         </li>
                         <li>
+                            <a href="{{ url('favourite-professional') }}"><i class="mdi mdi-lock"></i><span>Favourite</span></a>
+                        </li>
+                        <li>
                             <a href="{{ url('app-chat-client') }}"><i class="mdi mdi-message-text-outline"></i><span>Chat</span>
                         </li>
                         <li>
@@ -20,6 +23,7 @@
                             <a href="{{ url('change-password-client') }}"><i class="mdi mdi-lock"></i><span>Change Password</span></a>
                         </li>
                         
+
                         
 
                         <!-- <li>
