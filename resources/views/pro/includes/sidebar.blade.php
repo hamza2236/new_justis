@@ -7,6 +7,24 @@
                         <li>
                             <a href="{{ url('pro-dashboard') }}"><i class="mdi mdi-monitor"></i><span>Dashboards</span></a>
                         </li>
+                        <li>
+                            <a href="{{ url('subscription-pro') }}"><i class="mdi mdi-account-card-details"></i><span>Subscription</span></a>
+                        </li>
+                        <li>
+                            <a href="{{ url('wallet-pro') }}"><i class="mdi mdi-monitor"></i><span>Wallet</span></a>
+                        </li>
+                        <li>
+                            <a href="{{ url('all-clients-pro') }}"><i class="mdi mdi-monitor"></i><span>All Appointment</span></a>
+                        </li>
+                        <li>
+                            <a href="{{ url('feedback-pro') }}"><i class="mdi mdi-monitor"></i><span>Feedback</span></a>
+                        </li>
+                        <li>
+                            <a href="{{ url('client-chat-pro') }}"><i class="mdi mdi-monitor"></i><span>Client Chat</span></a>
+                        </li>
+                        <li>
+                            <a href="{{ url('admin-chat-pro') }}"><i class="mdi mdi-monitor"></i><span>Admin Chat</span></a>
+                        </li>
 
                         <li>
                             <a href="javascript: void(0);"><i class="mdi mdi-apps"></i><span>App</span><span class="menu-arrow"><i class="mdi mdi-chevron-right"></i></span></a>

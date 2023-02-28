@@ -115,7 +115,7 @@ Route::get("auth-register-pro", function(){
   return view("pro.auth-register");
 });
 
-Route::group(['middleware'=>['IsPro']],function () {
+// Route::group(['middleware'=>['IsPro']],function () {
 
 Route::get("pro-dashboard", function(){
    return view("pro.index");
@@ -135,6 +135,34 @@ Route::get("app-chat-pro", function(){
 Route::get("app-contact-list-pro", function(){
   return view("pro.app-contact-list");
 });
+
+// Mubasher Start
+
+Route::get("subscription-pro", function(){
+  return view("pro.subscription");
+});
+Route::get("wallet-pro", function(){
+  return view("pro.wallet");
+});
+Route::get("client-chat-pro", function(){
+  return view("pro.client-chat");
+});
+Route::get("admin-chat-pro", function(){
+  return view("pro.admin-chat");
+});
+Route::get("feedback-pro", function(){
+  return view("pro.feedback");
+});
+Route::get("all-clients-pro", function(){
+  return view("pro.all-clients");
+});
+Route::get("client-chart-pro", function(){
+  return view("pro.client-chart");
+});
+
+
+
+// Mubasher End
 
 
 Route::get("auth-recoverpw-pro", function(){
@@ -176,7 +204,7 @@ Route::get("tables-datatable-pro", function(){
 Route::get("ui-other-clipboard-pro", function(){
   return view("pro.ui-other-clipboard");
 });
-});
+// });
 // pro route end//
 // pro route end//
 // pro route end//
@@ -244,7 +272,7 @@ Route::get("page-invoice-client", function(){
 Route::get("page-pricing-client", function(){
   return view("client.page-pricing");
 });
-// Mubashar Start
+// Mubashar Start Client
 Route::get("client-dashboard", function(){
    return view("client.index");
 });
@@ -269,8 +297,11 @@ Route::get("profile-professional-client", function(){
 Route::get("professional-checkout-client", function(){
   return view("client.professional-checkout-client");
 });
+Route::get("favourite-professional", function(){
+  return view("client.favourite");
+});
 
-// Mubashar End
+// Mubashar End Client
 
 Route::get("tables-datatable-client", function(){
   return view("client.tables-datatable");
